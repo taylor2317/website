@@ -1,0 +1,275 @@
+.header{
+ background-color: #333;
+ padding-top: 2%;
+ padding-bottom: 1%;
+ color:#333;
+ font-family: Arial, Helvetica, sans-serif;
+ height: 7%;
+ border-bottom-style: solid;
+ border-bottom-width: 5%;
+ border-bottom-color: #7e57c2;
+}
+
+.navbar {
+    float:right !important;
+    padding-right: 1%;
+    padding-top: 0.5%;
+  }
+  
+  .navbar a {
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-width: 1px;
+    border-color: #333;
+    border-style: solid;
+  }
+
+  .navbar a.active {
+        background-color: #7e57c2;
+        color: white;
+        border-width: 1px;
+        border-color: #7e57c2;
+        border-style: solid;
+  }
+  
+  .navbar a:hover {
+    background-color: white;
+    color: #7e57c2;
+    border-bottom-style: solid;
+    border-bottom-width: 5%;
+    border-bottom-color: #7e57c2;
+  }
+
+  .title {
+    float: left;
+    position: left;
+    margin-left: 1%;
+    color: white;
+    background-color: #333;
+    font-size: 30px;
+    padding-left: 1%;
+    text-decoration: none !important;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.homepage {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    padding: 8%;
+    text-align: center;
+    float: center;
+}
+
+.homeText{
+    text-align: center;
+    color:#333;
+    background-color: white;
+    float: center;
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+  .homepageAbout{
+    background-color: #7e57c2;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+
+  .homeButton a {
+    background-color: white;
+    color: #333;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 17px; 
+    border-color: #7e57c2;
+    border-style: solid;
+    border-width: 1;
+  }
+
+  .homeButton a:hover{
+
+    background-color: #333;
+    color: white;
+  }
+
+  .footer {
+    width: 98%;
+    background-color: #333;
+    color: #7e57c2;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:1%;
+  }
+
+  .footerButtons a {
+    background-color: #7e57c2;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-width: 1;
+    margin: 0.5%;
+    border-color: #7e57c2;
+    border-style: solid;
+    font-size: 17px; 
+    padding-bottom: 1%;
+  }
+
+  .footerButtons a:hover {
+    background-color: white;
+    color: #7e57c2;
+  }
+
+  .cv {
+    background-image: url("cv.png");
+    background-color: #333;
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50%;
+    padding-top: 15%;
+    padding-bottom: 12%;
+    background-repeat: no-repeat;
+  }
+
+  .CVText{
+    text-align: center;
+    color:white;
+    background-color: #333333e7;
+    float: center;
+    left:0px;
+    padding: 3%;
+  }
+
+  .homeCVButton a {
+    background-color: #7e57c2;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    border-color: #7e57c2;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .homeCVButton a:hover{
+    background-color: white;
+    color: #7e57c2;
+
+  }
+
+  .pageTitle{
+    height: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7e57c2;
+    float: center;
+    padding-top: 8%;
+    text-align: center;
+  }
+
+  .aboutBody{
+    margin-top: -4%;
+    text-align: justify;
+    color: #333;
+    width: 80%;
+    padding: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 6%;
+    margin-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: large;
+    line-height: 1.5;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #333;
+    float: left;
+    width: 15.7%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #333;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid white;
+    color: #7e57c2;
+    background-color: white;
+    font-weight: bold;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .portfolio {
+    left:0px;
+    width: 100%;
+    padding:2px;
+    padding-bottom: 8%;
+    background-color: #7e57c2;
+    height: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  .projects {
+    left:0px;
+    width: 100%;
+    padding:2px;
+    background-color: #7e57c2;
+    height: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  .contactForm{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #7e57c2;
+    padding: 3%;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-size: larger;
+  }
+  .name {
+    margin-bottom: 1%;
+  }
+  .email {
+    margin-bottom: 1%;
+  }
+.subject {
+  margin-bottom: 1%;
+}
+.message {
+  margin-bottom: 1%;
+  resize: both;
+}
+.contactButton a{
+  background-color: #7e57c2;
+}
+.contactButton a:hover{
+  background-color: #7e57c2;
+}
