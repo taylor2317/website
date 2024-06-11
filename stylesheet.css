@@ -224,19 +224,26 @@ body{
     padding:1%
   } 
 
-  .aboutList {
+  .aboutLists{
     width: 100%;
     text-align: center;
     height: min-content;
     font-family: Arial, Helvetica, sans-serif;
     color:white;
     padding-bottom: 2%;
+    list-style-position: inside;
   }
 
-  .alH {
-    padding:0.2%;
+  .aboutLists h2{
+    font-weight: bold;
+    padding-bottom: 1%;
+    text-transform: uppercase;
   }
-  
+
+  .aboutLists li {
+    padding-right: 2%;
+  }
+
   div.gallery {
     margin: 5px;
     border: 1px solid #333333ee;
