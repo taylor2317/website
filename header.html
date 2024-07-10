@@ -1,0 +1,31 @@
+<head>
+<link rel="stylesheet" href="stylesheet.css">
+
+<div class="header" style="left: 0px; top: 0px; position: fixed; width: 100%; height:fit-content">
+    
+    <a class="title" style="font-weight: bold;" href="home.html">Milan Gudka</a>
+
+    <div class="navbar" style="font-weight:bold;">
+        <a id="homeNav" href="home.html">Home</a>
+        <a id="aboutNav" href="about.html">About</a>
+        <a id="CVNav" href="cv.html" target="_blank">Curriculum Vitae</a>
+        <a id="portNav" onmouseover="showSub()" onmouseleave="hideSub()" href="portfolio.html">Portfolio</a>
+        <a id="contNav" href="contact.html">Contact</a>
+    </div>
+
+    <div class="subNav  " style="font-weight: bold;">
+        <a id="artNav" style="visibility: hidden;" onmouseover="showSub()" onmouseleave="hideSub()" href="art.html">Art</a>
+    </div>
+    
+</div>
+
+</head>
+
+<script>
+    function showSub(){
+        document.getElementById("artNav").style.visibility = "visible";
+    }
+    function hideSub(){
+        document.getElementById("artNav").style.visibility = "hidden";
+    }
+</script>
