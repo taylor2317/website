@@ -1,33 +1,23 @@
 <head>
 
-    <link rel="stylesheet" href="stylesheet.css">
-    
-    <div class="header" style="left: 0px; top: 0px; position: fixed; width: 100%; height:fit-content">
-    
-        <a class="title" style="font-weight: bold;" href="home.html">Milan Gudka</a>
-    
-        <div class="navbar" style="font-weight:bold;">
-            <a id="homeNav" href="home.html">Home</a>
-            <a id="aboutNav" href="about.html">About</a>
-            <a id="CVNav" href="cv.html" target="_blank">Curriculum Vitae</a>
-            <a id="portNav" href="portfolio.html">Portfolio</a>
-            <a id="contNav" href="contact.html">Contact</a>
-        </div>
-    </div>
-    
-    <script src="headerifs.js"></script>
-    
-    </head>
+<link rel="stylesheet" href="stylesheet.css">
+
+<link href="header.html" rel="import">
+<div id="header"></div>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="header.js"></script>
+
+</head>
 
 <body>
 
-<div class="pageTitle">
+<div class="pageTitle" style="padding-top: 10%;">
     <h1>About Me</h1>
 </div>
 <div class="about">
     <table class="aboutText">
         <tr>
-            <td><img class="aboutImg" src="IMG_1366.JPG" height="50%" style="border: solid white 2px"></td>
+            <td><img class="aboutImg" src="images/IMG_1366.JPG" height="50%" style="border: solid white 2px"></td>
             <td>Hi, I'm Milan, a 17-year-old A-Level student at Parmiter's School. Currently, I'm studying Computer Science, English Literature, and Design and Technology. I am also undertaking an Extended Project Qualification (EPQ). For my GCSEs, I studied: English Literature, Mathematics, Combined Sciences, French, Computer Science, Product Design, and Geography.
                 <br>
                 <br>
@@ -72,13 +62,15 @@
     </ul>
     </div>
 </div>
+<div class="footer" style="padding-bottom: 1%;">
+    <h2 style="margin-bottom: 3%;">Milan Gudka</h2> 
+    <div class="footerButtons" style="padding-bottom: 1%;">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+    <a href="https://www.linkedin.com/in/mgudka2317" target="_blank"><img src="images/Linkedin Logo.png" style="padding-top: 2%" alt="LinkedIn" width="30"></a>
+    <a href="https://stackoverflow.com/users/17554728/taylor-2317" target="_blank"><img src="images/Stack Overflow.png" style="padding-top: 2%" alt="Stack Overflow" width="30"></a>
+    <a href="https://www.thestudentroom.co.uk/member.php?u=5998064" target="_blank"><img src="images/The_Student_Room_Group_Logo.png" style="padding-top: 2%" alt="The Student Room" width="30"></a>
+  </div>
 
-<script
-src="https://code.jquery.com/jquery-3.3.1.js"
-integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-crossorigin="anonymous">
-</script>
-<script src="footer1.js"></script>
-<div id="footer"></div>
-
-</body>
+  </body>

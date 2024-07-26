@@ -11,51 +11,106 @@
 }
 
 body{
-  margin:0px
+  margin:0px;
+  overflow-x: hidden;
 }
 
-.navbar {
-    float:right !important;
-    padding-right: 1%;
-    padding-top: 0.5%;;
-  }
-  
-  .navbar a {
-    overflow: hidden;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border-width: 2px;
-    border-color: #33333300;
-    border-style: solid;
-  }
+body a{
+  transition: 0.3s;
+}
 
-  .navbar a.active {
-    background-color: #0e9976;
-    color: white;
-    border-color: #0e9976;
-    border-style: solid;
-  }
-  
-  .navbar a:hover {
-    background-color: white;
-    color: #0e9976;
-    border-color: #0e9976;
+body a:hover {
+  transition: 0.7s;
+}
 
-  }
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(14, 153, 118);
+  background-color: rgba(14, 153, 118, 0.9);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
 
-  .title {
-    float: left;
-    position: left;
-    margin-left: 1%;
-    color: white;
-    font-size: 30px;
-    padding-left: 1%;
-    text-decoration: none !important;
-    font-family: Arial, Helvetica, sans-serif;
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block; /* Display block instead of inline */
+  transition: 0.5s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
+}
+
+/*Menu button*/
+.fa-bars{
+  color:white;
+  float: right;
+  margin-right: 1%;
+  font-size: 200%;
+  transition: 0.3s;
+}
+
+.fa-bars:hover{
+  font-size: 250%;
+  transition: 0.3s;
+}
+
+
+.title {
+  float: left;
+  position: left;
+  margin-left: 1%;
+  color: white;
+  font-size: 30px;
+  padding-left: 1%;
+  text-decoration: none !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title:hover{
+  font-size: xx-large;
+  transition: 0.3s;
+}
 
 .homepage {
     font-family: Arial, Helvetica, sans-serif;
@@ -110,10 +165,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 0.1%; }
 
-    .footer a {
+  .footer a {
       color:white;
       text-decoration: none;
     }
+
+.footername a:hover{
+    font-size: larger;
+}
 
   .footerButtons a {
     background-color: #0e9976;
@@ -134,7 +193,7 @@ body{
   }
 
   .cv {
-    background-image: url("cv.png");
+    background-image: url("images/cv.png");
     background-color: #333333ee;
     background-size: 100%;
     background-position: center;
@@ -259,6 +318,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-color: #333333ee;
+    transition: 0.5s;
   }
   
   div.gallery:hover {
@@ -364,21 +424,46 @@ body{
   border-color: #0e9976;
 }
 
-.slideshow-container {
-  max-width: 100%;
-  margin: auto;
-  background-color: #0e9976;
-  color:white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: large;
-  padding-bottom:2%;
-  padding-top:7%;
-  height:fit-content
+.scroll-container {
+  background-color: #333;
+  overflow: scroll;
+  white-space: nowrap;
+  padding: 10px;
+  overflow-y: hidden; /* Hide vertical scrollbar */
 }
 
-.mySlides {
-  display: none;
-} 
+.scroll-container img {
+  padding: 10px;
+}
+
+.scroll-container img:hover{
+  transform: scale(1.5);
+  padding:5%;
+}
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
 

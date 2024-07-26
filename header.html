@@ -1,2 +1,44 @@
+<head>
 <link rel="stylesheet" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<div class="header" style="left: 0px; top: 0px; position: fixed; width: 100%; height:fit-content">
+    
+    <a class="title" style="font-weight: bold;" href="home.html">Milan Gudka</a>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="cv.html">Curriculum Vitae</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  
+</div>
+  
+<!-- Menu bars -->
+<span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+
+</head>
+
+<script>
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+</script>
+<script src="https://kit.fontawesome.com/aa555ab8cf.js" crossorigin="anonymous"></script>
