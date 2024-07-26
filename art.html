@@ -1,81 +1,39 @@
 <head>
-  
+  <link rel="icon" href="images/Logo.png">
 <link rel="stylesheet" href="stylesheet.css">
 
-<div class="header" style="left: 0px; top: 0px; position: fixed; width: 100%; height:fit-content">
-
-    <a class="title" style="font-weight: bold;" href="home.html">Milan Gudka</a>
-
-    <div class="navbar" style="font-weight:bold;">
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="cv.html" target="_blank">Curriculum Vitae</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </div>
-</div>
+<div id="header"></div>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="header.js"></script>
 
 </head>
 
 <body>
 
-<div class="slideshow-container">
-    <h1>Art Portfolio</h1>
-    <div class="mySlides fade">
-      <img src="images/Harry Styles Abstract.jpg" style="height:40%; padding:2%">
-      <div class="artText">Harry Styles Abstract</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="images/Ariana Grande.jpg" style="height:40%; padding:2%">
-      <div class="artText">Ariana Grande</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="images/Billie Eilish.jpg" style="height:40%; padding:2%">
-      <div class="artText">Billie Eilish</div>
-    </div>
-
-    <div class="mySlides fade">
-        <img src="images/Zach Loizou.jpg" style="height:40%; padding:2%">
-        <div class="artText">Zach Loizou</div>
-      </div>
-
-      <div class="mySlides fade">
-        <img src="images/HS1.jpg" style="height:40%; padding:2%">
-        <div class="artText">Harry Styles Album</div>
-      </div>
-    </div>
+  <div class="pageTitle" style="padding-top: 10%;">
+    <h1>Art</h1>
 </div>
 
-  <script>
+<div id="cont" class="scroll-container">
+  <img src="images/Harry Styles Abstract.jpg" alt="Cinque Terre">
+  <img src="images/Ariana Grande.jpg" alt="Forest">
+  <img src="images/Billie Eilish.jpg" alt="Northern Lights">
+  <img src="images/Zach Loizou.jpg" alt="Mountains">
+  <img src="images/Roman Kemp.jpg" alt="Mountains">
+  <img src="images/HS1.jpg" alt="Mountains">
+</div>
 
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+<script src="footer.js"></script>
+<div id="footer"></div>
+
+<button onclick="next()">me</button>
+
+<script>
+  function next(){
+    document.getElementById("cont").scrollBy(300,300);
+
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 1000);
-}
-
-  </script>
-
-<div class="footer" style="padding-bottom: 1%;">
-  <h2 style="margin-bottom: 3%;">Milan Gudka</h2> 
-  <div class="footerButtons" style="padding-bottom: 1%;">
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact Me</a>
-  </div>
-  <a href="https://www.linkedin.com/in/mgudka2317" target="_blank"><img src="images/Linkedin Logo.png" style="padding-top: 2%" alt="LinkedIn" width="30"></a>
-  <a href="https://stackoverflow.com/users/17554728/taylor-2317" target="_blank"><img src="images/Stack Overflow.png" style="padding-top: 2%" alt="Stack Overflow" width="30"></a>
-  <a href="https://www.thestudentroom.co.uk/member.php?u=5998064" target="_blank"><img src="images/The_Student_Room_Group_Logo.png" style="padding-top: 2%" alt="The Student Room" width="30"></a>
-</div>
+</script>
 
 </body>

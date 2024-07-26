@@ -2,6 +2,7 @@ body{
     color: hsl(30, 10%, 34%);
     margin-top:0px;
     margin-left:0px;
+    padding-bottom: 10%;
 }
 
 @font-face {
@@ -41,6 +42,7 @@ img{
 }
 
 .desc{
+    margin-top: 1vh;
     font-family: Desc-Text;
 }
 
