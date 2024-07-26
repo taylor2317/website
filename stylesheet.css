@@ -1,289 +1,122 @@
-.header{
- background-color: #333333ee;
- padding-top: 1%;
- padding-bottom: 1%;
- color:#0e9976;
- font-family: Arial, Helvetica, sans-serif;
- height: 8%;
- border-bottom-style: solid;
- border-bottom-width: 0.5vh;
- border-bottom-color: #0e9976;
-}
+/*======================================================*\
+||                    Header and                        ||
+||                      NavBar                          ||
+*\======================================================*/
 
-.header img{
-  float: left;
-  height: 2%;
-  width: 2%;
-  margin-left: 1%;
-}
-
-body{
-  margin:0px;
-  overflow-x: hidden;
-}
-
-body a{
-  transition: 0.3s;
-}
-
-body a:hover {
-  transition: 0.7s;
-}
-
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(14, 153, 118);
-  background-color: rgba(14, 153, 118, 0.9);
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-  font-weight: bold;
-  padding: 8px;
-  margin-bottom: 1%;
-  text-decoration: none;
-  font-size: 36px;
-  color: white;
-  display: block; /* Display block instead of inline */
-  transition: 0.5s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  font-weight: bold;
-  color: #333;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
+  .header{ /* Main Header bar */
+  background-color: #333333ee;
+  color:#0e9976;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5vh;
+  border-bottom-color: #0e9976;
+  width: 100vw!important;
+  position: static;
+  }
+  .header img{ /* Logo */
+    display: none;
+  }
+  .overlay { /* Navbar popup */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(14, 153, 118);
+    background-color: rgba(14, 153, 118, 0.9);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s;
+  }
+  .overlay-content {  /* Text within the navbar popup */
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  .overlay a { /* Navbar popup */
+    font-weight: bold;
+    padding: 8px;
+    margin-bottom: 1%;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.5s; /* Transition effects on hover (color) */
+  }
+  .overlay .closebtn { /* Button in popup to close */
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
-}
-
-/*Menu button*/
-.fa-bars{
-  color:white;
-  float: right;
-  margin-right: 1%;
-  font-size: 200%;
-  transition: 0.3s;
-}
-
-.fa-bars:hover{
-  font-size: 250%;
-  transition: 0.3s;
-}
-
-
-.title {
-  margin-left: 1%;
-  color: white;
-  font-size: 30px;
-  text-decoration: none !important;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.title:hover{
-  font-size: xx-large;
-  transition: 0.3s;
-}
-
-.homepage {
+  .fa-bars{ /* 3-line Menu button */
+    color:white;
+    float: right;
+    font-size: 150%;
+    transition: 0.3s;
+    margin-top: 1%;
+    margin-right: 1%;
+  }
+  .title { /* Full name at top of navbar */
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    text-decoration: none !important;
+    margin-top: 0.25%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0e9976;
-    padding: 8%;
+  }
+
+/*======================================================*\
+||                       Footer                         ||
+*\======================================================*/
+
+  .footer{ /* Main Footer bar */
+    width: 100%;
+    background-color: #333333ee;
+    color: white;
+    text-decoration: none;
     text-align: center;
-    float: center;
-}
-
-.homeText{
-    text-align: center;
-    color:#0e9976;
-    background-color: white;
-    float: center;
-    padding-top: 5%;
-    padding-bottom: 8%;
-}
-
-.homepageAbout{
-  background-color: #333333ee;
-  text-align: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  line-height: 400%;
-}
-
-.homeButton a {
-  background-color: #333333ee;
-  color: white;
-  text-align: center;
-  padding: 1.5%;
-  text-decoration: none;
-  font-size: 17px; 
-  border-color: #0e9976;
-  border-style: solid;
-  border-width: 1;
-}
-
-.homeButton a:hover{
-  background-color: white;
-  color: #333333ee;
-}
-
-.footer{
-  width: 100%;
-  background-color: #333333ee;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 1%;
-}
-
-.footer a {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+  }
+  .footer a { /* Full name at top of footer */
     color:white;
     text-decoration: none;
+    margin-top: -1%;
+    padding: 2%;
   }
-
-.footer h2{
-  margin-top: -1%;
-  padding: 2%;
-}
-
-.footer h2:hover{
-    font-size: xx-large;
-}
-
-.footerButtons a {
-  background-color: #0e9976;
-  color: white;
-  text-align: center;
-  padding: 1% 1%;
-  text-decoration: none;
-  font-weight: bold;
-  border-width: 1;
-  margin: 0.5%;
-  border-color: #0e9976;
-  border-style: solid;
-}
-
-.footerButtons a:hover {
-  background-color: white;
-  color: #0e9976;
-}
-
-.socials{
-  padding-top: 2%;
-  text-align: center;
-  width: 100%;
-}
-
-.socials a{
-  padding: 0.5%;
-}
-
-.socials a:hover{
-  font-size: larger;
-}
-
-
-  .cv {
-    background-image: url("images/cv.png");
-    background-color: #333333ee;
-    background-size: 100%;
-    background-position: center;
-    text-align: center;
-    padding: 1%;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 20%;
-    padding-top: 6%;
-    padding-bottom: 17%;
-    background-repeat: no-repeat;
-  }
-
-  .CVText{
-    text-align: center;
-    color:white;
-    background-color: #333333ee;
-    float: center;
-    left:0px;
-    padding: 3%;
-    width:70%;
-    margin-left: 12%;
-  }
-
-  .homeCVButton a {
+  .footerButtons a { /* About and Contact buttons in footer */
     background-color: #0e9976;
     color: white;
     text-align: center;
-    padding: 2%;
+    padding: 1% 1%;
+    text-decoration: none;
+    font-weight: bold;
+    border-width: 1;
+    margin: 0.5%;
     border-color: #0e9976;
     border-style: solid;
-    border-width: 1px;
-    text-decoration: none;
-    font-size: 17px;
   }
-
-  .homeCVButton a:hover{
-    background-color: white;
-    color: #0e9976;
-
-  }
-/*
-  .portfolioHome{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #0e9976;
-    height:50%;
-    padding:2%;
-    color:white;
+  .socials{ /* Socials in navbar */
+    padding-top: 2%;
     text-align: center;
+    width: 100%;
+  }
+  .socials a{ /* Socials in navbar */
+    padding: 0.5%;
   }
 
-  .portCircle{
-    background-color: red;
-    height:40%;
-    width:20%;
-    border-radius: 50%;
-    margin-left:50%;
-  }
+/*======================================================*\
+||                        Main                          ||
+||                        Body                          ||
+*\======================================================*/
 
-  .portHomeText{
-    text-align: center;
-  }
-*/
-.pageTitle{
+body{ /* Generic Body */
+  margin:0px;
+  overflow-x: hidden!important;
+}
+.pageTitle{ /* Generic Page titles */
   height: 15%;
   font-family: Arial, Helvetica, sans-serif;
   color: #0e9976;
@@ -292,123 +125,7 @@ body a:hover {
   padding-bottom:2%;
   text-align: center;
 }
-
-.about{
-  background-color: #0e9976;
-}
-
-.aboutImg{
-  width: 100%;
-  text-align: center;
-  margin:1%;
-}
-
-.aboutText, .aboutText a{
-  padding-top: 1%;
-  width: fit-content;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  color:white;
-  font-size: large;
-  text-decoration: none;
-}
-tr, td {
-  padding:1%
-} 
-
-.aboutLists{
-  width: 100%;
-  text-align: center;
-  height: min-content;
-  font-family: Arial, Helvetica, sans-serif;
-  color:white;
-  padding-bottom: 2%;
-  list-style-position: inside;
-}
-
-.aboutLists h2{
-  font-weight: bold;
-  padding-bottom: 1%;
-  text-transform: uppercase;
-}
-
-.aboutLists li {
-  padding-right: 2%;
-}
-
-div.gallery {
-  margin: 5px;
-  border: 1px solid #333333ee;
-  float: left;
-  width: 15.7%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  background-color: #333333ee;
-  transition: 0.5s;
-}
-
-div.gallery:hover {
-  border: 1px solid white;
-  color: #0e9976;
-  background-color: white;
-  font-weight: bold;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-.projects {
-  left:0px;
-  width: 100%;
-  padding:2px;
-  height: 50%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-align: center;
-  padding-bottom: 5%;
-}
-
-.websites {
-  left:0px;
-  width: 100%;
-  padding:2px;
-  height: 50%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-align: center;
-}
-
-.contactForm{
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #0e9976;
-  padding: 3%;
-  text-align: center;
-  color:white;
-  font-weight: bold;
-  font-size: larger;
-}
-.name {
-  margin-bottom: 1%;
-}
-.email {
-  margin-bottom: 1%;
-}
-.subject {
-  margin-bottom: 1%;
-}
-.message {
-  margin-bottom: 1%;
-  resize: both;
-}
-
-.unfinishedAlert{
+.unfinishedAlert{ /* Warning for if a page might be incomplete */
   width:99.5%;
   padding-top:2%;
   padding-bottom: 2%;
@@ -420,77 +137,281 @@ div.desc {
   border-left-color:#ff0000;
 }
 
-.portBack{
+/*======================================================*\
+||                        Home                          ||
+||                        Page                          ||
+*\======================================================*/
+
+.homepage{ /* Generic page background*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0e9976;
+    padding: 8%;
+    text-align: center;
+    float: center;
+}
+.homeText{ /* Welcome intro text */
+    text-align: center;
+    color:#0e9976;
+    background-color: white;
+    float: center;
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+.homepageAbout{ /* About section of homepage */
+  background-color: #333333ee;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  line-height: 400%;
+}
+.homeButton a { /* All the hyperlinked buttons on homepage */
+  background-color: #0e9976;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  border-color: #0e9976;
+  border-style: solid;
+  border-width: 1px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.cv { /* CV section background */
+  background-image: url("images/cv.png");
+  background-color: #333333ee;
+  background-size: 100%;
+  background-position: center;
+  text-align: center;
+  padding: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 20%;
+  padding-top: 6%;
+  padding-bottom: 17%;
+  background-repeat: no-repeat;
+}
+.CVText{ /* All CV section text */
+  text-align: center;
+  color:white;
+  background-color: #333333ee;
+  float: center;
+  left:0px;
+  padding: 3%;
+  width:70%;
+  margin-left: 12%;
+}
+
+/*======================================================*\
+||                        About                         ||
+||                        Page                          ||
+*\======================================================*/
+
+.about{ /* Background */
+  background-color: #0e9976;
+}
+.aboutImg{ /* Profile Pic */
+  width: 100%;
+  text-align: center;
+  margin:1%;
+}
+.aboutText, .aboutText a{ /* All text on the about page */
+  padding-top: 1%;
+  width: fit-content;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color:white;
+  font-size: large;
+  text-decoration: none;
+}
+tr, td { /* Formatting for all text (the text is all in a table) */
+  padding:1%
+} 
+.aboutLists{ /* 2 lists of software and languages */
+  width: 100%;
+  text-align: center;
+  height: min-content;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  padding-bottom: 2%;
+  list-style-position: inside;
+}
+.aboutLists h2{ /* 2 lists of software and languages */
+  font-weight: bold;
+  padding-bottom: 1%;
+  text-transform: uppercase;
+}
+.aboutLists li { /* 2 lists of software and languages */
+  padding-right: 2%;
+}
+
+/*======================================================*\
+||                      Portfolio                       ||
+||                        Page                          ||
+*\======================================================*/
+
+.gallery { /* Generic galleries */
+  margin: 5px;
+  border: 1px solid #333333ee;
+  float: left;
+  width: 15.7%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #333333ee;
+  transition: 0.5s;
+}
+.gallery img { /* Gallery images */
+  width: 100%;
+  height: auto;
+}
+.desc { /* Captions */
+  padding: 15px;
+  text-align: center;
+}
+.projects { /* Bottom padding */
+  padding-bottom: 5%;
+}
+.websites, .projects { /* For both galleries */
+  left:0px;
+  width: 100%;
+  padding:2px;
+  height: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+}
+.portBack{ /* Background */
   background-color: #0e9976;
   padding-bottom: 1%;
   width: 100%;
 }
 
-.artCont{
-  height:15%;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
+/*======================================================*\
+||                       Contact                        ||
+||                        Page                          ||
+*\======================================================*/
 
-.artButton a {
-  background-color: #333333ee;
-  color: white;
-  text-align: center;
-  padding: 1.5%;
-  text-decoration: none;
-  font-size: 17px; 
-  border-color: #333333ee;
-  border-style: solid;
-  border-width: 1;
-}
+/*
+##########################################################
+                         FORM HERE
+##########################################################
+*/
 
-.artButton a:hover{
+/*======================================================*\
+||                        Art                           ||
+||                        Page                          ||
+*\======================================================*/
 
-  background-color: white;
-  color: #0e9976;
-  border-color: #0e9976;
-}
-
-.scroll-container {
+.scroll-container { /* Image container */
   background-color: #333;
   overflow: scroll;
   white-space: nowrap;
   padding: 10px;
   overflow-y: hidden; /* Hide vertical scrollbar */
 }
-
-.scroll-container img {
+.scroll-container img { /* Image padding */
   padding: 10px;
 }
 
-.scroll-container img:hover{
-  transform: scale(1.5);
-  padding:5%;
+/*
+#########################################################################################
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#########################################################################################
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#########################################################################################
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#########################################################################################
+*/
+
+
+@media (min-width: 500px){
+  .header{
+    height: 8vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+  .title {
+    margin-left: 4vw;
+    font-size: 30px;
+    margin-top: 0.25%;
+  }
+
+  .title:hover{
+    font-size: xx-large;
+    transition: 0.3s;
+  }
+
+  .fa-bars{
+    margin-top: -2%;
+    margin-right: 1%;
+    font-size: 200%;
+    position: static;
+  }
+  .header img{
+    display: block;
+    float: left;
+    max-height: 50px;
+    max-width: 50px;
+    margin-left: 1%;
+  }
+
+  body a{
+    transition: 0.3s;
+  }
+  
+  body a:hover {
+    transition: 0.7s;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    font-weight: bold;
+    color: #333;
+  }
+  .fa-bars:hover{
+    font-size: 250%;
+    transition: 0.3s;
+  }
+
+  .homeButton a:hover{
+    background-color: white;
+    color: #333333ee;
+  }
+
+  .footer h2:hover{
+    font-size: xx-large;
+  }
+
+  .footerButtons a:hover {
+    background-color: white;
+    color: #0e9976;
+  }
+
+  .socials a:hover{
+    font-size: larger;
+  }
+
+  .homeCVButton a:hover{
+    background-color: white;
+    color: #0e9976;
+  }
+
+  div.gallery:hover {
+    border: 1px solid white;
+    color: #0e9976;
+    background-color: white;
+    font-weight: bold;
+  }
+
+  .artButton a:hover{
+
+    background-color: white;
+    color: #0e9976;
+    border-color: #0e9976;
+  }
+  
+  .scroll-container img:hover{
+    transform: scale(1.5);
+    padding:5%;
+  }
+  
 }
-
-
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-
-
