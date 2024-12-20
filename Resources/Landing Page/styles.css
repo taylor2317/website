@@ -135,7 +135,9 @@ img{
         background-image: url(/images/bg-desktop.svg);
         background-size: 1318 800px;
         display: flex;
+        overflow-y: hidden;
     }
+
     .fa-facebook-f{
         padding-left: 0.5%;
         padding-right: 0.5%;
@@ -155,7 +157,7 @@ img{
         text-align: right;
         font-size: 20px;
         left: 0px;
-        top:600px
+        bottom: 0px;
     }
     .socials a{
         padding: 1%;

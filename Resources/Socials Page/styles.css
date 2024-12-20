@@ -144,9 +144,15 @@ body{
 }
 
 @media (min-width: 500px) {
+    body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
     .page{
         position: static;
         margin-left: 7.5%;
+        height: 100vh;
+        width: 100vw;
         background-image: url(images/bg-pattern-bottom-desktop.svg), url(images/bg-pattern-top-desktop.svg);
     }
     .content{

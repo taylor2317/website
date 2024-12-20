@@ -112,11 +112,20 @@ price {
     margin-bottom: 2.5%;
 }
 
-.actionButt a {
+.actionButt a, .cvButt a {
     background-color: #20937e;
     border: 1px, solid, #20937e;
     color: white;
     text-decoration: none;
+    padding: 3%;
+}
+
+.cvButt {
+    margin: 7.5%;
+    text-align: center;
+}
+
+.cvButt a {
     padding: 3%;
 }
 
@@ -179,6 +188,20 @@ price {
     color: #20937e;
 }
 
+.quotes {
+    margin: auto;
+    text-align: center;
+    background-color: #20937e;
+    width: 85%;
+    padding: 4.5%;
+    color: white;
+    font-size: large;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    font-style: italic;
+}
+
 .card{
     width: 80%;
     margin: auto;
@@ -191,13 +214,13 @@ price {
     overflow-x: hidden;
 }
 
-.card i, .portCard i {
+.card i, .portCard i, .soloCard i {
     margin-top: 5%;
     font-size: 200%;
     color: #20937e;
 }
 
-.portCard {
+.portCard, .soloCard {
     color: black;
     text-decoration: none;
     height: max-content;
@@ -238,6 +261,27 @@ price {
     border: 1px solid #20937e;
     font-size: smaller;
     margin: 1%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contForm {
+    padding: 5%;
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    color: #20937e;
+}
+
+.contForm h3 a, .contForm h3 {
+    text-decoration: none;
+    margin-top: 7.5%;
+    color: #20937e;
+    user-select: text;
 }
 
 .footer{
@@ -261,8 +305,7 @@ price {
 @media (min-width:800px){
     body, a, html {
         transition: 0.5s;
-        -ms-user-select: none; /* IE 10 and IE 11 */
-        user-select: none; /* Standard syntax */
+        user-select: none;
     }
 
     .menuList {
@@ -275,8 +318,8 @@ price {
         font-size: 100%;
     }
 
-    .welcome:hover, .homeCont:hover, .footer:hover, .header:hover, .cv:hover {
-        box-shadow: 2px 2px 10px #20937e;
+    .welcome:hover, .homeCont:hover, .footer:hover, .header:hover, .cv:hover, .contForm:hover{
+        box-shadow: 2px 2px 10px #20937e
     }
 
     .homeCont{
@@ -305,18 +348,30 @@ price {
         margin-right: 1%;
     }
     
-    .actionButt a:hover {
+    .actionButt a:hover, .cvButt a:hover {
         color: #20937e;
         text-decoration: none;
         background-color: white;
-    }   
+    }
+    
+    .cvButt {
+        margin-top: 2.5%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .cvButt a {
+        padding: 1%;
+    }
 
     .cv {
         transition: 0.5s;
     }
 
-    .card:hover, .portCard:hover{
+    .card:hover, .portCard:hover, .soloCard:hover{
         margin-top: -5px;
+        transition: 0.5s;
+        background-color: lightgrey;
     }
 
     .pageBlock {
@@ -329,7 +384,7 @@ price {
         padding:2%;
     }
 
-    .card, .portCard{
+    .card, .portCard, .soloCard {
         width: 80%;
         margin-left: 2.5%;
         margin-right: 2.5%;
@@ -344,17 +399,20 @@ price {
         text-decoration: none;
     }
 
+    .quotes {
+        width: 55%;
+        margin-top: 2%;
+        font-size: larger;
+        margin-bottom: 2%;
+    }
+
     .portCard {
         width: 50%;
     }
 
-    .card:hover, .portCard:hover{
-        background-color: lightgrey;
-    }
-
-    .card i, .portCard i{
-        font-size: 200%;
-        color: #20937e;
+    .soloCard {
+        width:40%;
+        margin: auto;
     }
 
     .tag:hover{
@@ -375,6 +433,14 @@ price {
 
     .footer a:hover {
         color: lightgray;
+    }
+
+    .portCard hr{
+        display: none;
+    }
+
+    .contForm a:hover {
+        text-shadow: 2px 2px 10px lightgray;
     }
 
 }
