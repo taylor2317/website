@@ -1,3 +1,11 @@
+# COLOUR PALETTE:
+#20937eff
+#ffffffff
+#d3d3d3ff
+#000000ff
+
+# HEADER:
+```htm
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -31,34 +39,9 @@
         <a href="portfolio.html">Portfolio</a><br>
         <a href="contact.html">Contact Me</a><br>
     </div>
-
-    <div class="welcome" id="welcome">
-        <h1>Milan Gudka</h1>
-        <h2>Personal and Professional<br>Web Development Solutions</h2>
-        <div class="arrows">
-            <a href="#homeCont"><i class="fa-solid fa-chevron-down"></i></a>
-        </div>
-    </div>
-
-    <div class="homeCont" id="homeCont">
-        <div class="homeCards">
-            <h2>Tutoring</h2>
-            <p>Computer Science Online Tutoring offered from ages 11 - 16.<br>Prices from <price>£15 /hour.</price></p>
-            <div class="actionButt">
-                <a href="contact.html">Contact Me</a>
-            </div>
-        </div>
-        <div class="homeCards">
-            <h2>Professional Skills</h2>
-            <p>Find out more about me, and my past experience.</p>
-            <div class="actionButt">
-                <a href="about.html">About Me</a>
-                <a href="cv.html">CV</a>
-            </div>
-        </div>
-    </div>
-
-
+```
+# FOOTER:
+```htm
     <div class="footer">
         <h1><a href="home.html">Milan Gudka</a></h1>
         <p><a href="mailto:mgudka2317@hotmail.com">mgudka2317@hotmail.com</a></p><br>
@@ -71,3 +54,4 @@
 
 <script src="scripts.js"></script>
 <script src="https://kit.fontawesome.com/7e891fcb86.js" crossorigin="anonymous"></script>
+```

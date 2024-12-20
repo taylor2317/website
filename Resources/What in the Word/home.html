@@ -1,0 +1,49 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!--This line of code links the CSS style sheet to this HTML page to allow the formatting to work-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+        <!--This line of code imports the font type-->
+</head>
+
+<div class="background" id="background">
+    <!---This line of code defines that that there is a class called the background which can be edited to add an image to-->
+
+</div>
+
+<div class="header" id="header"> <!---This line of code defines the entire header of the page-->
+    <div class="name"> <!---This line of code defines the name of my website-->
+        <h1><a href="home.html" style="text-decoration: none; color:darkgreen;">What in the Word?</a></h1> <!---This line of code defines the text and some of its formatting for the header website name-->
+    </div>
+    <div class="homeButton"> <!---This line of code defines the home button of my website-->
+        <h1><a href="home.html">⌂</a></h1> <!---This line of code defines the ASCII home button symbol-->
+    </div>
+</div>
+
+<body>
+<div class="homepage"> <!---This line of code defines the content of the page-->
+    <div class="selector">
+        <h1><a href="select.html">Play Game</a></h1> <!---This line of code links the button to the game section page-->
+    </div>
+
+    <div class="instructions" >
+        <h1><a href="instructions.html">Instructions</a></h1><!---This line of code links the button to the instructions-->
+    </div>
+
+    <div class="leaderboard"> <!--This line of code links the button to the leaderboard-->
+        <button type="button" onclick="leaderboard()"><h1>Leaderboard</h1></button>
+    </div>
+
+    <div class="settings"> <!---This line of code links the button to the settings-->
+        <h1><a href="settings.html">Settings</a></h1>
+    </div>
+</div>
+
+</body>
+
+<script src="cols.js"></script> <!---This line of code links the 'cols.js' file so that high-contrast mode can be applied-->
+
+<script>
+    function leaderboard(){
+        alert("Coming Soon!")
+    }
+</script>

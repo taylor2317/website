@@ -1,105 +1,138 @@
+<!DOCTYPE html>
 <head>
-  <link rel="icon" href="images/Logo.png">
-<link rel="stylesheet" href="stylesheet.css">
-
-<div class="unfinishedAlert" style="margin-top: 10%;">
-  <strong>Please Note:</strong> This page is currently under construction and may be incomplete...
-</div>
-
-<div id="header"></div>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script src="header.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet">
 
 </head>
 <body>
-
-<div class="pageTitle">
-    <h1>Portfolio</h1>
-</div>
-
-
-<div class="portBack">
-<div class="websites">
-
-  <h1>Websites</h1>
-
-  <div class="gallery">   
-  <a target="_blank" href="home.html">
-    <img src="images/Website Homescreen.png" alt="Milan Gudka Portfolio Website">
-  </a>
-  <div class="desc">Milan Gudka Portfolio Website</div>
-  </div>
-
-  <div class="gallery" id="WITW_Button">   
-    <a target="_blank" href="What in the Word\home.html">
-      <img src="images/What in the Word.png" alt="What in the Word? Game">
-    </a>
-    <div class="desc">What in the Word? Game</div>
-    </div>
-
-  <div class="gallery" id="Landing Page Challenge">   
-    <a target="_blank" href="Landing Page/index.html">
-      <img src="images/Landing Page.png" alt="Landing Page Challenge">
-    </a>
-    <div class="desc">Landing Page Challenge</div>
-    </div>
-
-    <div class="gallery" id="Recipe Page Challenge">   
-      <a target="_blank" href="Recipe Page/index.html">
-        <img src="images/Recipe Page.png" alt="Recipe Page Challenge">
-      </a>
-      <div class="desc">Recipe Page Challenge</div>
-      </div>
-
-      <div class="gallery" id="Social Reviews Page Challenge">   
-        <a target="_blank" href="Socials Page/index.html">
-          <img src="images/Socials Page.PNG" alt="Social Reviews Page Challenge">
-        </a>
-        <div class="desc">Social Reviews Page Challenge</div>
+    <div class="header">
+        <h1><a href="home.html">Milan Gudka</a></h1>
+        <div class="nav">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cv.html">Curriculum Vitae</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact Me</a>
         </div>
-</div>   
+        <div class="menuButton" onclick="menu()">
+            <hr>
+            <hr>
+            <hr>
+        </div>
+    </div>
+    <div class="menuList">
+        <a href="home.html">Home</a><br>
+        <a href="about.html">About</a><br>
+        <a href="cv.html">Curriculum Vitae</a><br>
+        <a href="portfolio.html">Portfolio</a><br>
+        <a href="contact.html">Contact Me</a><br>
+    </div>
 
-<div class="projects">
-  <h1>Projects</h1>
-  <div class="gallery">   
-  <a target="_blank" href="17625_1078_MilanGudka.pdf">
-    <img src="images/GCSE DT NEA Front Cover.jpeg" alt="GCSE Product Design Coursework">
-  </a>
-  <div class="desc">GCSE Product Design Coursework</div>
-</div>
+    <div class="pageBlock">
+        <h1>Projects</h1>
+        <div class="cardCont">
+            <a href="home.html" class="portCard">
+                <i class="fa-solid fa-user-large"></i>
+                <h2>Portfolio Website</h2>
+                <p>This site, a Personal Portfolio Website</p>
+                <div class="tagsCont">
+                    <p class="tag">HTML</p>
+                    <p class="tag">CSS</p>
+                    <p class="tag">JavaScript</p>
+                </div>
+                <hr>
+            </a>
+            <a href="#" class="portCard">
+                <i class="fa-solid fa-spell-check"></i>
+                <h2>What in the Word?</h2>
+                <p>A web-based 'Wordle' alternative</p>
+                <div class="tagsCont">
+                    <p class="tag">HTML</p>
+                    <p class="tag">CSS</p>
+                    <p class="tag">JavaScript</p>
+                </div>
+            </a>
+        </div>
+        <div class="cardCont">
+            <a href="/Resources/Landing Page/index.html" class="portCard">
+                <i class="fa-solid fa-user-large"></i>
+                <h2>Landing Page</h2>
+                <p>A template Landing Page</p>
+                <div class="tagsCont">
+                    <p class="keyTag">Template</p>
+                    <p class="tag">HTML</p>
+                    <p class="tag">CSS</p>
+                    <p class="tag">JavaScript</p>
+                </div>
+                <hr>
+            </a>
+            <a href="/Resources/Recipe Page/index.html" class="portCard">
+                <i class="fa-solid fa-spell-check"></i>
+                <h2>Recipe Page</h2>
+                <p>A template Recipe Page</p>
+                <div class="tagsCont">
+                    <p class="keyTag">Template</p>
+                    <p class="tag">HTML</p>
+                    <p class="tag">CSS</p>
+                    <p class="tag">JavaScript</p>
+                </div>
+            </a>
+            <a href="/Resources/Socials Page/index.html" class="portCard">
+                <i class="fa-solid fa-user-large"></i>
+                <h2>Socials Page</h2>
+                <p>A template Social Review Page</p>
+                <div class="tagsCont">
+                    <p class="keyTag">Template</p>
+                    <p class="tag">HTML</p>
+                    <p class="tag">CSS</p>
+                    <p class="tag">JavaScript</p>
+                </div>
+                <hr>
+            </a>    
+        </div>
+        <div class="arrows">
+            <a href="#other"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+    </div>
 
-<div class="gallery">   
-  <a target="_blank" href="images/Coming Soon.jpg">
-    <img src="images/A-Level DT Coursework Homepage.png" alt="A-Level Product Design Coursework">
-  </a>
-  <div class="desc">A-Level Product Design Coursework</div>
-  </div>
-
-  <div class="gallery">   
-    <a target="_blank" href="images/Coming Soon.jpg">
-<img src="images/A-Level Computer Science Coursework Homepage.png" alt="A-Level Computer Science Coursework">
-</a>
-<div class="desc">A-Level Computer Science Coursework</div>
-</div>
-
-<div class="gallery">   
-  <a target="_blank" href="images/Coming Soon.jpg">
-<img src="images/Coming Soon.jpg" alt="A-Level English Literature Coursework">
-</a>
-<div class="desc">A-Level English Literature Coursework</div>
-</div>
-
-<div class="gallery">   
-  <a target="_blank" href="images/Coming Soon.jpg">
-<img src="images/Coming Soon.jpg" alt="EPQ Dissertation">
-</a>
-<div class="desc">EPQ Dissertation</div>
-</div>
-</div>
-
-</div>
-
-<script src="footer.js"></script>
-<div id="footer"></div>
-
+    <div class="pageBlock" id="other">
+        <h1>Other Projects</h1>
+        <div class="cardCont">
+            <a href="#" class="portCard">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h2>GCSE Product Design Coursework</h2>
+                <p>AQA GCSE Product Design Coursework</p>
+                <div class="tagsCont">
+                    <p class="tag">GCSE</p>
+                    <p class="tag">Product Design</p>
+                </div>
+                <hr>
+            </a>
+            <a href="#" class="portCard">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h2>A-Level Product Design Coursework</h2>
+                <p>AQA A-Level Product Design Coursework</p>
+                <div class="tagsCont">
+                    <p class="tag">A-Level</p>
+                    <p class="tag">Product Design</p>
+                </div>
+                <hr>
+            </a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h1><a href="home.html">Milan Gudka</a></h1>
+        <p><a href="mailto:mgudka2317@hotmail.com">mgudka2317@hotmail.com</a></p><br>
+        <div class="socials">
+            <a href="https://linkedin.com/in/mgudka2317/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/taylor2317" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
 </body>
+<script src="scripts.js"></script>
+<script src="https://kit.fontawesome.com/7e891fcb86.js" crossorigin="anonymous"></script>

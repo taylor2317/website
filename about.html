@@ -1,66 +1,141 @@
+<!DOCTYPE html>
 <head>
-    <link rel="icon" href="images/Logo.png">
-<link rel="stylesheet" href="stylesheet.css">
-
-<div id="header"></div>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script src="header.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet">
 
 </head>
-
 <body>
-
-<div class="pageTitle" style="padding-top: 10%;">
-    <h1>About Me</h1>
-</div>
-<div class="about">
-    <table class="aboutText">
-        <tr>
-            <td><img class="aboutImg" src="images/IMG_1366.JPG" height="50%" style="border: solid white 2px"></td>
-            <td>Hi, I'm Milan, a 17-year-old A-Level student at Parmiter's School. Currently, I'm studying Computer Science, English Literature, and Design and Technology. I am also undertaking an Extended Project Qualification (EPQ). For my GCSEs, I studied: English Literature, Mathematics, Combined Sciences, French, Computer Science, Product Design, and Geography.
-                <br>
-                <br>
-                Inside and outside of school, I've been entrusted with numerous roles of responsibility even since Primary School where I helped to achieve a Green Flag Award in the 'Eco-Council', served as a member of the 'Google Champions', was a School Captain, and was Form Captain. At <i>Parmiter’s School</i>, I've held roles like Deputy Form Captain, and currently am a House Captain and an Equalities Prefect.
-                <br>
-                <br>    
-                Beyond academics, I also take part in various societies and clubs, co-running the LGBTQ+ Society and the Hackathon Club whilst being a member of the English Society and the Feminist Society. Previously, I have also been involved in clubs including Board Games Club, Choir, Junior Strings and Women in STEM.
-        </td>
-        </tr>
-        <tr>
-            <td colspan="2">My involvement extends to the digital world as a member of the <i>PoleisMC</i> Minecraft Staff team, where I oversaw events as Events Coordinater and managed Discord servers and social media accounts. This experience honed my skills in fairness, equity, and unbiased decision-making. Alongside this volunteering, I am a Discord Admin and Software Tester for <i><a href="https://www.knowt.com" target="_blank">Knowt</a></i> and a Life and Style Helper on <i><a href="https://www.thestudentroom.co.uk/" target="_blank">The Student Room</a></i>. In-school, I partake in a variety of volunteering as a Canteen Till Assistant, GCSE Peer Mentor, Computer Science Mentor, and Computer Science Admin.
-                <br>
-                <br>
-                In the professional realm, I've been a Crew Member at <i>McDonald's</i> since July 2023, allowing me to create a disciplined work ethic. I have also previously undertaken freelance work by running social media accounts for <i>Freelance Associated Media</i>.
-                <br>
-                <br>
-                Academically, I've achieved proficiency in programming languages including Python, SQL, C, HTML, CSS and JavaScript. Currently, I'm also expanding my language skills with a focus on itish Sign Language (BSL). I've also explored musical interests, from achieving Grade 2 on the Violin to being self-taught in playing the guitar. I have also previously taken part in martial arts training in karate, swimming since the age of 5, and accomplishments like the Bronze CREST Award, completion of iDEA badges (of which, my Record of Achievement can be found <i><a href="https://idea.org.uk/roa/XDEBYRGGBS" target="_blank">here</a>)</i>, and a Level One ‘Sports Leaders’ award in 2022.</p>
-            </td>
-        </tr>
-    </table>
-<div class="aboutLists">
-    <h2>Prior Software Experience Includes:</h2>
-    <ul>
-        <li>Google Workplace</li>
-        <li>Microsoft Office</li>
-        <li>Visual Studio Code</li>
-        <li>Fusion 360</li>
-        <li>SolidWorks</li>
-        <li>SketchUp</li>
-        <li>Adobe Photoshop</li>
-        <li>Photopea</li>
-        <li>ProCreate</li>
-    </ul>
-    <h2>Language Proficiency Includes:</h2>
-    <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>C</li>
-    </ul>
+    <div class="header">
+        <h1><a href="home.html">Milan Gudka</a></h1>
+        <div class="nav">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cv.html">Curriculum Vitae</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+        <div class="menuButton" onclick="menu()">
+            <hr>
+            <hr>
+            <hr>
+        </div>
     </div>
-</div>
-<script src="footer.js"></script>
-<div id="footer"></div>
-  </body>
+    <div class="menuList">
+        <a href="home.html">Home</a><br>
+        <a href="about.html">About</a><br>
+        <a href="cv.html">Curriculum Vitae</a><br>
+        <a href="portfolio.html">Portfolio</a><br>
+        <a href="contact.html">Contact Me</a><br>
+    </div>
+
+    <div class="pageBlock">
+        <h1>Skills</h1>
+        <div class="cardCont">
+            <div class="card">
+                <i class="fa-solid fa-link"></i>
+                <h2>Web Development</h2>
+                <p>Specialisation in front-end Web Development</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2>Tutoring</h2>
+                <p>Computer Science Tutoring, up to GCSE Level</p>
+            </div>
+            <div class="card">
+                <i class="fa-brands fa-google"></i>
+                <h2>Google Apps Script</h2>
+                <p>Implementing automation using Google Apps Script</p>
+            </div>
+        </div>
+        <div class="cardCont">
+            <div class="card">
+                <i class="fa-solid fa-display"></i>
+                <h2>CAD</h2>
+                <p>3D CAD Design and Manufacturing</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-table"></i>
+                <h2>Databases</h2>
+                <p>Using Google Sheets and Excel automation</p>
+            </div>
+            <div class="card">
+                <i class="fa-brands fa-linux"></i>
+                <h2>Linux</h2>
+                <p>Installing Linux and using the terminal</p>
+            </div>
+        </div>
+        <div class="arrows">
+            <a href="#prev"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+    </div>
+
+    <div class="pageBlock" id="prev">
+        <h1>Previous Experience</h1>
+
+        <h2>Languages</h2>
+        <div class="cardCont">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>HTML</h3>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>CSS</h3>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>JavaScript</h3>
+            </div>
+        </div>
+        <div class="cardCont">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>SQL</h3>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Python</h3>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>C</h3>
+            </div>
+        </div><br>
+
+        <h2>Operating Systems</h2>
+        <div class="cardCont">
+            <div class="card">
+                <i class="fa-brands fa-windows"></i>
+                <h3>Windows</h3>
+            </div>
+            <div class="card">
+                <i class="fa-brands fa-apple"></i>
+                <h3>MacOS</h3>
+            </div>
+            <div class="card">
+                <i class="fa-brands fa-linux"></i>
+                <h3>Linux</h3>
+            </div>
+            <div class="card">
+                <i class="fa-brands fa-raspberry-pi"></i>
+                <h3>Raspbian</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h1><a href="home.html">Milan Gudka</a></h1>
+        <p><a href="mailto:mgudka2317@hotmail.com">mgudka2317@hotmail.com</a></p><br>
+        <div class="socials">
+            <a href="https://linkedin.com/in/mgudka2317/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/taylor2317" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+</body>
+
+<script src="scripts.js"></script>
+<script src="https://kit.fontawesome.com/7e891fcb86.js" crossorigin="anonymous"></script>
