@@ -496,7 +496,7 @@ form p {
     }
 
     .tag:hover{
-        color:teal;
+        color:white;
         background-color: white;
         box-shadow: 2px 2px 10px teal;
     }
