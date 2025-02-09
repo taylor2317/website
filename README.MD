@@ -1,5 +1,6 @@
 # COLOUR PALETTE:
 #008080ff
+#15b295ff
 #ffffffff
 #d3d3d3ff
 #000000ff

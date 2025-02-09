@@ -2,7 +2,7 @@ body{
     margin: 0px;
     position: absolute;
     font-family: "Funnel Display", serif;
-    background-color: lightgray;
+    background-color: lightgrey;
     overflow-x: hidden;
     height: 100vh;
     width: 100vw;
@@ -15,7 +15,7 @@ html {
 }
 
 .header{
-    background-color: teal;
+    background-image: linear-gradient(to bottom right, teal, #15b295);
     text-align: center;
     width: 100vw;
     padding:2%;
@@ -92,7 +92,7 @@ html {
 
 .homeCont {
     width:78%;
-    background-color: teal;
+    background-image: linear-gradient(to bottom right, teal, #15b295);
     margin: auto;
     margin-top: 5%;
     padding: 1%;
@@ -132,7 +132,7 @@ price {
 }
 
 .actionButt a, .cvButt a{
-    background-color: teal;
+    background-image: linear-gradient(to bottom right, teal, #15b295);
     border: 1px, solid, teal;
     color: white;
     text-decoration: none;
@@ -189,7 +189,7 @@ price {
     width: 40%;
     border: 0px;
     height: 0.1px;
-    background-color: teal;
+    background-image: linear-gradient(to bottom right, teal, #15b295);
 }
 
 .pageBlock {
@@ -210,7 +210,7 @@ price {
 .quotes {
     margin: auto;
     text-align: center;
-    background-color: teal;
+    background-image: linear-gradient(to bottom right, teal, #15b295);
     width: 85%;
     padding: 4.5%;
     color: white;
@@ -227,7 +227,7 @@ price {
     padding:2vw;
     background-color: white;
     border-radius: 20px;
-    border: lightgray solid 1px; 
+    border: lightgrey solid 1px; 
     box-shadow: 2px 2px 10px lightgrey;
     margin-bottom: 5%;
     overflow-x: hidden;
@@ -252,7 +252,7 @@ price {
     width: 40%;
     height: 1px;
     border: transparent;
-    background-color: teal;
+    background-image: linear-gradient(to bottom right, teal, #15b295);
 }
 
 .tagsCont {
@@ -266,7 +266,7 @@ price {
 .tag{
     padding: 2%;
     color:white;
-    background-color: teal;
+    background-image: linear-gradient(to bottom right, teal, #15b295);
     border-radius: 20px;
     border: 1px solid teal;
     font-size: smaller;
@@ -317,7 +317,7 @@ form p {
 
 .footer{
     margin-top: 2%;
-    background-color: teal;
+    background-image: linear-gradient(to bottom right, teal, #15b295);
     text-align: center;
     padding: 2%;
     user-select: text;
@@ -339,7 +339,7 @@ form p {
 .pageback {
     height: 100%;
     width: 100%;
-    background-color: teal;
+    background-image: linear-gradient(to bottom right, teal, #15b295);
     position: fixed;
     color: white;
 }
@@ -429,9 +429,9 @@ form p {
         background-color: white;
     }
 
-    .butt404 a:hover {
+    .butt a:hover {
         color: white;
-        background-color: teal;
+        background-image: linear-gradient(to bottom right, teal, #15b295);
     }
     
     .cvButt {
@@ -471,7 +471,7 @@ form p {
         padding: 2%;
         background-color: white;
         border-radius: 20px;
-        border: lightgray solid 1px; 
+        border: lightgrey solid 1px; 
         box-shadow: 2px 2px 10px lightgrey;
         transition: 0.5s;
         margin-bottom: -1%;
@@ -503,16 +503,16 @@ form p {
 
     .keyTag:hover{
         color:white;
-        background-color: teal;
+        background-image: linear-gradient(to bottom right, teal, #15b295);
         box-shadow: 2px 2px 10px teal;
     }
 
     .arrows a:hover {
-        color: lightgray;
+        color: lightgrey;
     }
 
     .footer a:hover {
-        color: lightgray;
+        color: lightgrey;
     }
 
     .portCard hr{
@@ -520,7 +520,7 @@ form p {
     }
 
     .contForm a:hover {
-        text-shadow: 2px 2px 10px lightgray;
+        text-shadow: 2px 2px 10px lightgrey;
     }
 
 }
@@ -545,9 +545,10 @@ form p {
         width: fit-content;
     }
 
-    .header a:hover{
-        color:lightgray;
+    .header a:hover {
+        color: lightgrey;
         font-size: 105%;
+        text-shadow: 0px 0px 40px #15b295;
     }
 
     .nav{
@@ -562,6 +563,7 @@ form p {
     .nav a{
         margin-left:20px;
         background-color: white;
+        border: solid white 2px;
         padding: 2%;
         color: teal;
         font-weight: bold;
@@ -571,9 +573,7 @@ form p {
         text-shadow: none;
         color:white;
         font-weight: bold;
-        text-shadow: 2px 2px 10px teal;
-        background-color: lightgray;
-        font-size: 105%;
+        background-color: transparent;
     }
 
     .menuButton, .menuList, .portCard hr{
