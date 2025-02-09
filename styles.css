@@ -427,6 +427,7 @@ form p {
         color: teal;
         text-decoration: none;
         background-color: white;
+        background-image: none;
     }
 
     .butt a:hover {

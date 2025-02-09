@@ -1,5 +1,9 @@
 body{
-    background-color: teal;
+    margin: 0px;
+    height: 100vh;
+    padding: 0px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, teal, #1ca088);
     font-family: Funnel Display;
 }
 
