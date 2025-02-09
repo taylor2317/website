@@ -5,6 +5,9 @@ body{
     background-color: lightgray;
     overflow-x: hidden;
     height: 100vh;
+    width: 100vw;
+    transition: 0.5s;
+    font-size: small;
 } 
 
 html {
@@ -12,7 +15,7 @@ html {
 }
 
 .header{
-    background-color: #20937e;
+    background-color: teal;
     text-align: center;
     width: 100vw;
     padding:2%;
@@ -46,9 +49,16 @@ html {
     background-color: none;
     padding: 2%;
     line-height: 250%;
-    font-size: 4vw;
-    color: #20937e;
-    text-decoration: none
+    color: teal;
+    text-decoration: none;
+}
+
+.backUp {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 2%;
+    display: none;
 }
 
 .welcome {
@@ -60,8 +70,15 @@ html {
     border-radius: 20px;
     margin: auto;
     margin-top: 2%;
-    color: #20937e;
+    color: teal;
     line-height: 300%;
+    transition: 0.2s;
+}
+
+.welcome p {
+    margin-top: -2.5%;
+    margin-bottom: 2.5%;
+    
 }
 
 .arrows {
@@ -69,17 +86,18 @@ html {
 }
 
 .arrows a {
-    color: #20937e;
+    color: teal;
     font-size: 150%;
 }
 
 .homeCont {
     width:78%;
-    background-color: #20937e;
+    background-color: teal;
     margin: auto;
     margin-top: 5%;
     padding: 1%;
     border-radius: 20px;
+    transition: 0.2s;
 }
 
 .homeCards {
@@ -89,10 +107,11 @@ html {
     padding:2%;
     text-align: center;
     border-radius: 20px;
+    transition: 0.2s;
 }
 
 .homeCards h2 {
-    color: #20937e;
+    color: teal;
 }
 
 .homeCards p {
@@ -103,7 +122,7 @@ html {
 
 price {
     font-weight: bold;
-    color: #20937e;
+    color: teal;
 }
 
 .actionButt {
@@ -112,9 +131,9 @@ price {
     margin-bottom: 2.5%;
 }
 
-.actionButt a, .cvButt a {
-    background-color: #20937e;
-    border: 1px, solid, #20937e;
+.actionButt a, .cvButt a{
+    background-color: teal;
+    border: 1px, solid, teal;
     color: white;
     text-decoration: none;
     padding: 3%;
@@ -140,7 +159,7 @@ price {
 
 .cv h2 {
     text-align: center;
-    color: #20937e;
+    color: teal;
 }
 
 .cv h4 {
@@ -170,7 +189,7 @@ price {
     width: 40%;
     border: 0px;
     height: 0.1px;
-    background-color: #20937e;
+    background-color: teal;
 }
 
 .pageBlock {
@@ -181,17 +200,17 @@ price {
     background-color: white;
     border-radius: 20px;
     padding:2.5%;
-    overflow-x: hidden;
+    height: max-content;
 }
 
 .pageBlock h1 {
-    color: #20937e;
+    color: teal;
 }
 
 .quotes {
     margin: auto;
     text-align: center;
-    background-color: #20937e;
+    background-color: teal;
     width: 85%;
     padding: 4.5%;
     color: white;
@@ -212,12 +231,13 @@ price {
     box-shadow: 2px 2px 10px lightgrey;
     margin-bottom: 5%;
     overflow-x: hidden;
-}
+    transition: 0.5s;
+} 
 
 .card i, .portCard i, .soloCard i {
     margin-top: 5%;
     font-size: 200%;
-    color: #20937e;
+    color: teal;
 }
 
 .portCard, .soloCard {
@@ -232,7 +252,7 @@ price {
     width: 40%;
     height: 1px;
     border: transparent;
-    background-color: #20937e;
+    background-color: teal;
 }
 
 .tagsCont {
@@ -246,19 +266,19 @@ price {
 .tag{
     padding: 2%;
     color:white;
-    background-color: #20937e;
+    background-color: teal;
     border-radius: 20px;
-    border: 1px solid #20937e;
+    border: 1px solid teal;
     font-size: smaller;
     margin: 1%;
 }
 
 .keyTag{
     padding: 2%;
-    color: #20937e;
+    color: teal;
     background-color: white;
     border-radius: 20px;
-    border: 1px solid #20937e;
+    border: 1px solid teal;
     font-size: smaller;
     margin: 1%;
     text-transform: uppercase;
@@ -274,38 +294,42 @@ price {
     background-color: white;
     border-radius: 20px;
     transition: 0.5s;
-    color: #20937e;
+    color: teal;
 }
 
 .contForm h3 a, .contForm h3 {
     text-decoration: none;
     margin-top: 7.5%;
-    color: #20937e;
+    color: teal;
     user-select: text;
 }
 
 .footer{
     margin-top: 2%;
-    background-color: #20937e;
+    background-color: teal;
     text-align: center;
     padding: 2%;
+    user-select: text;
 }
 
 .footer a{
     text-decoration: none;
     color: white;
     margin: 1%;
+    user-select: text;
 }
 
 .footer i {
     font-size: 150%;
     padding: 0px;
+    user-select: none;
 }
 
 @media (min-width:800px){
     body, a, html {
         transition: 0.5s;
         user-select: none;
+        font-size: 100%;
     }
 
     .menuList {
@@ -318,8 +342,8 @@ price {
         font-size: 100%;
     }
 
-    .welcome:hover, .homeCont:hover, .footer:hover, .header:hover, .cv:hover, .contForm:hover{
-        box-shadow: 2px 2px 10px #20937e
+    .welcome:hover, .homeCont:hover, .footer:hover, .cv:hover, .contForm:hover{
+        box-shadow: 2px 2px 10px teal
     }
 
     .homeCont{
@@ -349,7 +373,7 @@ price {
     }
     
     .actionButt a:hover, .cvButt a:hover {
-        color: #20937e;
+        color: teal;
         text-decoration: none;
         background-color: white;
     }
@@ -416,15 +440,15 @@ price {
     }
 
     .tag:hover{
-        color:#20937e;
+        color:teal;
         background-color: white;
-        box-shadow: 2px 2px 10px #20937e;
+        box-shadow: 2px 2px 10px teal;
     }
 
     .keyTag:hover{
         color:white;
-        background-color: #20937e;
-        box-shadow: 2px 2px 10px #20937e;
+        background-color: teal;
+        box-shadow: 2px 2px 10px teal;
     }
 
     .arrows a:hover {
@@ -455,6 +479,9 @@ price {
         justify-content: space-between;
         align-items: center;
         transition: 0.5s;
+        position: sticky;
+        top: 0px;
+        box-shadow: 2px 2px 10px teal
     }
 
     .header a{
@@ -480,7 +507,7 @@ price {
         margin-left:20px;
         background-color: white;
         padding: 2%;
-        color: #20937e;
+        color: teal;
         font-weight: bold;
     }
 
@@ -488,9 +515,9 @@ price {
         text-shadow: none;
         color:white;
         font-weight: bold;
-        font-size: larger;
-        text-shadow: 2px 2px 10px #20937e;
+        text-shadow: 2px 2px 10px teal;
         background-color: lightgray;
+        font-size: 105%;
     }
 
     .menuButton, .menuList, .portCard hr{

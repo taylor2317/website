@@ -1,0 +1,28 @@
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+const data = google.visualization.arrayToDataTable([
+  ['Guesses:', '4-letter', '5-letter', '6-letter'],
+  ['1',a4,a5,a6],
+  ['2',b4,b5,b6],
+  ['3',c4,c5,c6],
+  ['4',d4,d5,d6],
+  ['5',e4,e5,e6]
+]);
+
+const options = {
+  title:'Games won per guesses'
+};
+
+const chart = new google.visualization.BarChart(document.getElementById('myChart'));
+chart.draw(data, options);
+
+}
+</script>

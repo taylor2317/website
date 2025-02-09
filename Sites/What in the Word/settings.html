@@ -1,0 +1,49 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!--This line of code links the CSS style sheet to this HTML page to allow the formatting to work-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+        <!--This line of code imports the font type-->
+</head>
+
+<div class="background" id="background">
+    <!---This line of code defines that that there is a class called the background which can be edited to add an image to-->
+</div>
+
+<body>
+
+<div class="popup" id="popup">
+    <h1 style="text-align: center;">Settings: </h1>
+
+    <h2 style="text-align: center;">High-Contrast Mode</h2>
+
+    <button id="colOn" onclick="colOn()" style="font-family: Kanit;">Turn on High-Contrast Mode</button>
+    <button id="colOff" onclick="colOff()" style="font-family: Kanit;">Turn off High-Contrast Mode</button>
+
+    <h2 style="text-align: center;">Clear data</h2>
+    <button type="button" style="font-family: Kanit;" id="data" onclick="clearData()">Clear data</button>
+</div>
+
+<div class="header" id="header"> <!---This line of code defines the entire header of the page-->
+    <div class="name"> <!---This line of code defines the name of my website-->
+        <h1><a href="home.html" style="text-decoration: none; color:darkgreen;">What in the Word?</a></h1> <!---This line of code defines the text and some of its formatting for the header website name-->
+    </div>
+    <div class="homeButton"> <!---This line of code defines the home button of my website-->
+        <h1><a href="home.html">⌂</a></h1> <!---This line of code defines the ASCII home button symbol-->
+    </div>
+</div>
+
+<div class="closeButton">
+    <a href="home.html">x</a>
+</div>
+
+</body>
+
+<script>
+    function clearData(){
+        localStorage.clear();
+        alert("All stored data has been removed")
+    }
+
+</script>
+
+<script src="cols.js"></script>
