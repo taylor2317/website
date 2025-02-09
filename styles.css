@@ -297,11 +297,22 @@ price {
     color: teal;
 }
 
-.contForm h3 a, .contForm h3 {
+.contForm h4 a, .contForm h4 {
     text-decoration: none;
-    margin-top: 7.5%;
     color: teal;
     user-select: text;
+}
+
+req {
+    color:red
+}
+
+form {
+    margin-top: 5%;
+}
+
+form p {
+    font-weight: boldF;
 }
 
 .footer{
@@ -323,6 +334,46 @@ price {
     font-size: 150%;
     padding: 0px;
     user-select: none;
+}
+
+.pageback {
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+    position: fixed;
+    color: white;
+}
+
+.main404 {
+    text-align: center;
+    font-size: 200%;
+    padding: 10%;
+    padding-top: 0px;
+}
+
+.main404 h1 {
+    font-size: 500%;
+}
+
+.submit {
+    font-size: 200%;
+    padding: 10%;
+    text-align: center;
+}
+
+.butt {
+    font-size: 150%;
+    margin-top: -5%;
+    text-align: center;
+}
+
+.butt a {
+    text-decoration: none;
+    color: teal;
+    background: white;
+    border:white solid;
+    padding: 1%;
+    margin: 1%;
 }
 
 @media (min-width:800px){
@@ -372,10 +423,15 @@ price {
         margin-right: 1%;
     }
     
-    .actionButt a:hover, .cvButt a:hover {
+    .actionButt a:hover, .cvButt a:hover{
         color: teal;
         text-decoration: none;
         background-color: white;
+    }
+
+    .butt404 a:hover {
+        color: white;
+        background-color: teal;
     }
     
     .cvButt {

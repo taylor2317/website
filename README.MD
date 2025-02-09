@@ -1,8 +1,12 @@
 # COLOUR PALETTE:
-#20937eff
+#008080ff
 #ffffffff
 #d3d3d3ff
 #000000ff
+
+# SITE LINK:
+
+https://milangudka.netlify.app/
 
 # HEADER:
 ```htm
@@ -14,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet">
+    <title>Milan Gudka</title>
 
 </head>
 <body>

@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet">
+    <title>Milan Gudka</title>
 
 </head>
 <body>
@@ -33,16 +34,20 @@
     </div>
 
     <div class="contForm">
-        <h2>
-            <i class="fa-classic fa-solid fa-triangle-exclamation fa-fw"></i>
-            Contact Form coming soon!
-            <i class="fa-classic fa-solid fa-triangle-exclamation fa-fw"></i>
-        </h2>
+        <h1>Contact Form</h1>
+        <h4>Please Note: <req>*</req> indicates a required field.</h4>
+        <form name="contact" method="POST" data-netlify="true" action="submit.html">
+            <p><label>Full Name <req>*</req> : <input type="text" required name="name" /></label></p>
+            <p><label>Email <req>*</req> : <input type="email" required name="email" /></label></p>
+            <p><label>Subject: <input type="text" name="subject" /></label></p>
+            <p><label>Message <req>*</req> : <textarea style="height:100px; width: 200px;" required name="message"></textarea></label></p>
+            <p><button type="submit">Send</button></p>
+        </form>
 
-        <h3>For now, please email <a href="mailto:mgudka2317@hotmail.com" target="_blank">mgudka2317@hotmail.com</a>.</h3>
+        <h4>If you experience any difficulties, please email <a href="mailto:mgudka2317@hotmail.com">mgudka2317@hotmail.com</a>.</h4>
     </div>
 
-    <div class="footer" style="position: fixed; width: 96%; bottom: 0px;">
+    <div class="footer">
         <h1><a href="home.html">Milan Gudka</a></h1>
         <p><a href="mailto:mgudka2317@hotmail.com">mgudka2317@hotmail.com</a></p><br>
         <div class="socials">
