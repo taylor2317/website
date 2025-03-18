@@ -47,7 +47,7 @@
                 </div>
                 <hr>
             </a>
-            <a href="#" class="portCard">
+            <a href="Sites/What in the Word/home.html" class="portCard">
                 <i class="fa-solid fa-spell-check"></i>
                 <h2>What in the Word?</h2>
                 <p>A web-based 'Wordle' alternative</p>
@@ -117,7 +117,7 @@
     <div class="pageBlock">
         <h1>Other Projects</h1>
         <div class="cardCont">
-            <a href="/Resources/GCSE_Product_Design_NEA.pdf" class="portCard">
+            <a onclick="GCSEDTPopup()" id="GCSE-DT" class="portCard">
                 <i class="fa-solid fa-pen-to-square"></i>
                 <h2>GCSE Product Design Coursework</h2>
                 <p>AQA GCSE Product Design Coursework</p>
@@ -127,12 +127,11 @@
                 </div>
                 <hr>
             </a>
-            <a href="#" class="portCard">
+            <a onclick="ALevelDTPopup()" id="A-Level-DT" class="portCard">
                 <i class="fa-solid fa-pen-to-square"></i>
                 <h2>A-Level Product Design Coursework</h2>
                 <p>AQA A-Level Product Design Coursework</p>
                 <div class="tagsCont">
-                    <p class="keyTag">Ongoing</p>
                     <p class="tag">A-Level</p>
                     <p class="tag">Product Design</p>
                 </div>
@@ -180,6 +179,25 @@
             </a>
         </div>
     </div>
+
+    <div class="popup">
+        <div class="popupArrows">
+            <i class="fa-solid fa-chevron-left" onclick="next()"></i>
+            <i class="fa-solid fa-chevron-right" onclick="prev()"></i>
+        </div>
+        <div class="closeButt">
+            <i class="fa-solid fa-xmark" onclick="popupClose()"></i>
+        </div>
+        <img class="popupImg" id="popupImg">
+        <div class="dots">
+            <i id="1" class="fa-solid fa-circle"></i>
+            <i id="2" class="fa-solid fa-circle"></i>
+            <i id="3" class="fa-solid fa-circle"></i>
+            <i id="4" class="fa-solid fa-circle"></i>
+            <i id="5" class="fa-solid fa-circle"></i>
+            <i id="6" class="fa-solid fa-circle"></i>
+        </div>
+    </div>
     
     <div class="footer">
         <h1><a href="home.html">Milan Gudka</a></h1>
@@ -190,5 +208,7 @@
         </div>
     </div>
 </body>
+
 <script src="scripts.js"></script>
+<script src="popups.js"></script>
 <script src="https://kit.fontawesome.com/7e891fcb86.js" crossorigin="anonymous"></script>
