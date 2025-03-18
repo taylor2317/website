@@ -1,39 +1,43 @@
+<!DOCTYPE html>
 <head>
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
-    <!--This line of code links the CSS style sheet to this HTML page to allow the formatting to work-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
-        <!--This line of code imports the font type-->
+
+    <!-- Preconnect to Google's font servers for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link to a specific font for the page -->
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet">
+
+    <!-- Meta tag for responsive design on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<div class="background" id="background">
-    <!---This line of code defines that that there is a class called the background which can be edited to add an image to-->
-
-</div>
-
-<div class="header" id="header"> <!---This line of code defines the entire header of the page-->
-    <div class="name"> <!---This line of code defines the name of my website-->
-        <h1><a href="home.html" style="text-decoration: none; color:darkgreen;">What in the Word?</a></h1> <!---This line of code defines the text and some of its formatting for the header website name-->
-    </div>
-    <div class="homeButton"> <!---This line of code defines the home button of my website-->
-        <h1><a href="home.html">⌂</a></h1> <!---This line of code defines the ASCII home button symbol-->
-    </div>
-</div>
-
 <body>
-
-<div class="selectionpage"><!---This line of code defines the content of the page-->
-    <div class="letter4">
-        <h1><a href="fourletter.html">4-Letter</a></h1><!---This line of code links the button to the 4-letter game-->
+    <!-- Header section with game title and a link to go back to the home page -->
+    <div class="header" id="header">
+        <h1><a href="home.html">What in the Word?</a></h1> <!-- Game title with a link -->
+        <h1><a href="home.html"><i class="fa-solid fa-house"></i></a></h1> <!-- Home icon as a link -->
     </div>
 
-    <div class="letter5">
-        <h1><a href="fiveletter.html">5-Letter</a></h1><!---This line of code links the button to the 5-letter game-->
-    </div>
+    <!-- Page where the user selects the game type (4, 5, or 6 letter) -->
+    <div class="selPage">
+        <!-- Option for 4-letter game type -->
+        <h1 onclick="four()">4-Letter</h1> <!-- Button to start the 4-letter game -->
 
-    <div class="letter6">
-        <h1><a href="sixletter.html">6-Letter</a></h1> <!---This line of code links the button to the 6-letter game-->
-    </div>
-</div>
+        <!-- Option for 5-letter game type -->
+        <h1 onclick="five()">5-Letter</h1> <!-- Button to start the 5-letter game -->
 
+        <!-- Option for 6-letter game type -->
+        <h1 onclick="six()">6-Letter</h1> <!-- Button to start the 6-letter game -->
+    </div>
 </body>
-<script src="cols.js"></script> <!---This line of code links the 'cols.js' file so that high-contrast mode can be applied-->
+
+<!-- External script link to Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/7e891fcb86.js" crossorigin="anonymous"></script>
+
+<!-- Link to custom JavaScript file for functionality -->
+<script src="scripts.js"></script>
+
+</html>

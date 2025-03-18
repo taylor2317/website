@@ -1,334 +1,266 @@
-body{
-    margin: 0;
-    font-family: "Kanit";
-    background-image: linear-gradient( darkorchid, darkmagenta, purple);
+/* Background and font styling for the body */
+body {
+    background-image: url("Background.jpg"); /* Set background image */
+    background-size: cover; /* Make sure the background image covers the entire body */
+    font-family: Funnel Display; /* Set the custom font for the body */
 }
 
+/* Header styling */
 .header {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    height: 12%;
+    position: fixed; /* Fixed position at the top */
+    display: flex; 
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Align items in the center vertically */
+    background-color: #ffffffb3; /* Semi-transparent white background */
+    top: 0; /* Align to top */
+    left: 0; /* Align to the left */
+    width: 90%; /* Take 90% of the width */
+    padding: 1%; 
+    padding-left: 5%; /* Add padding to left */
+    padding-right: 5%; /* Add padding to right */
+}
+
+/* Header links and titles styling */
+.header a, .page h1, .settButt a, .selPage h1{
+    color: darkgreen; /* Set link and heading color to dark green */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Styling for main page and selection page */
+.page, .selPage {
+    justify-content: center; /* Center the content */
+    align-items: center; 
     width: 100%;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0px 10px 100px purple;
-    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    margin-top: 20%; /* Add space from top */
 }
 
-.name {
-    text-decoration: none;
-    float: left;
-    position: fixed;
-    left: 2%;
-    top:-1%;
+/* Page and selection page heading styling */
+.page h1, .selPage h1, .endAct h2 {
+    width: max-content; /* Set width to content size */
+    text-align: center; /* Center text */
+    background-color: #ffffffb3; /* Semi-transparent white background */
+    padding: 2%;
+    margin-bottom: 1px; /* Add small margin at bottom */
 }
 
-.homeButton {
-    text-align: right;
-    float: right;
-    font-weight: bold;
-    font-size: 200%;
-    position: fixed;
-    top: -8.5%;
-    right: 1%;
-}
-
-.homeButton a {
-    color: teal;
-    text-decoration: none;
-}
-
-.homeButton a:hover {
-    color: purple;
-}
-
-.homepage {
-    position: fixed;
-    text-align: center;
-    left: 27%;
-    width: 50%;
-    top: 25%;
-    
-}
-
-.homepage a{
-    text-decoration: none;
-    color: white;
-    padding-left: 10%;
-    padding-right: 10%;
-    background-color: teal;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-color: teal;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.homepage a:hover{
-    background-color: white;
-    color:teal;
-    box-shadow: 0px 0px 30px purple;
-    text-decoration: none;
-}
-
-.homepage button {
-    font-size: h1;
-    font-weight: bold;
-    font-family: "Kanit";
-    padding-left: 10%;
-    padding-right: 10%;
-    margin: -2%;
-    color: rgba(255, 255, 255, 0.75);
-    background-color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(0, 0, 0, 0.5);
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.homepage button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 0px 30px black;
-    color:black;
-}
-
-.selectionpage {
-    position: fixed;
-    text-align: center;
-    left: 27%;
-    width: 50%;
-    top: 25%;
-    
-}
-
-.selectionpage a {
-    text-decoration: none;
-    color: black;
-    padding-left: 10%;
-    padding-right: 10%;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.selectionpage a:hover {
-    color: white;
-    background-color: teal;
-    box-shadow: 0px 0px 30px black;
-}
-
-.selector {
-    margin-bottom: 10%;
-}
-
-.instructions {
-    margin-bottom: 10%;
-}
-
-.leaderboard {
-    margin-bottom: 10%;
-}
-
-.settings {
-    margin-bottom: 10%;
-}
-
-.letter4 {
-    margin-bottom: 10%;
-}
-
-.letter5 {
-    margin-bottom: 10%;
-}
-
-.letter6 {
-    margin-bottom: 10%;
-}
-
+/* Popup styling, hidden by default */
 .popup{
-    background-color: rgba(255, 255, 255, 0.5);
-    position: fixed;
+    display: none; /* Hidden initially */
+    position: fixed; 
+    top: 18%; /* Positioned from the top */
+    left: 3%; /* Positioned from the left */
+    min-height: 70%;
     width: 90%;
-    left:4%;
-    bottom:3%;
-    height:78%;
-    padding:1%;
     text-align: center;
-     
-}
-.closeButton a{
-    border-radius: 100%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.2);
-    height:20px;
-    width: 20px;
-    position: fixed;
-    text-align: center;
-    padding: 0.5%;
-    right:2.5%;
-    line-height: 75%;
-    font-family: Arial, Helvetica, sans-serif;
-    top:13%;
-    background:white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 150%;
-}
-.closeButton a:hover{
-    border-radius: 100%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: white;
-    height:20px;
-    width: 20px;
-    position: fixed;
-    text-align: center;
-    padding: 0.5%;
-    right:2.5%;
-    line-height: 75%;
-    font-family: Arial, Helvetica, sans-serif;
-    top:13%;
-    color:white;
-    background-color:rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    font-weight: bold;
+    background-color: #ffffffb3; /* Semi-transparent white background */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    font-size: small;
 }
 
+/* Close button (X) in popup */
+.popup .fa {
+    position: fixed; 
+    top: 18%;
+    right: 3%;
+    font-size: 200%; /* Large font size */
+    padding: 1%;
+}
+
+/* Styling for specific icons in popup */
+.popup .fa-solid {
+    font-size: 150%; /* Slightly smaller for solid icons */
+}
+
+/* Images inside the popup */
+.popup img {
+    width: 80%; /* Set image width to 80% of parent */
+}
+
+/* Styling for various instruction backgrounds */
+.instred, .instyell, .instgreen {
+    margin-top: 1%;
+    padding: 0.5%;
+}
+
+/* Red background for instructions */
 .instred {
-    background-color:#ea9999;
-    padding:0.5%;
+    background-color: #ea9999;
 }
 
+/* Yellow background for instructions */
 .instyell {
-    background-color:#ffe599;
-    padding:0.5%;
+    background-color: #ffe599;
 }
 
+/* Green background for instructions */
 .instgreen {
-    background-color:#93c47d;
-    padding:0.5%;
+    background-color: #93c47d;
 }
 
-.FourInputBox {
-    position: fixed;
-    left:1.5%;
-    bottom:-1%;
+/* Settings button container styling */
+.settButt {
+    margin: 2.5%;
 }
 
-.FourSubmit{
-    position: fixed;
-    right: 2.7%;
-    height: 120%;
-    bottom:-110.7%;
-    padding: 1%;
-}
-
-.FiveInputBox {
-    position: fixed;
-    left:1.5%;
-    bottom:-1%;
-}
-
-.FiveSubmit{
-    position: fixed;
-    right: 2.6%;
-    height: 120%;
-    bottom:-110.7%;
-    padding: 1%;
-}
-
-.SixInputBox {
-    position: fixed;
-    left:1.5%;
-
-    bottom:-1%;
-}
-
-.SixSubmit{
-    position: fixed;
-    right: 2.7%;
-    height: 120%;
-    bottom:-110.7%;
-    padding: 1%;
-}
-
-
-.FourTable {
-    position: fixed;
-    bottom:12%;
-    height:75%;
-    left:1.5%;
-    width: 96.6%;
+/* Settings button styling */
+.settButt a {
     background-color: white;
-    border-collapse: collapse;
-    font-family: Kanit;
-    width:96.5%;
-    table-layout: fixed
+    border: darkgreen 1px solid;
+    font-weight: bold;
+    padding: 1%;
+    font-size: larger;
 }
 
-.FiveTable {
-    position: fixed;
-    bottom:12%;
-    height:75%;
-    left:1.5%;
-    width: 96.6%;
-    background-color: white;
-    border-collapse: collapse;
+/* Selection page styling */
+.selPage {
+    margin-top: 50%;
 }
 
-.SixTable {
-    position: fixed;
-    bottom:12%;
-    height:75%;
-    left:1.5%;
-    width: 96.6%;
-    background-color: white;
-    border-collapse: collapse;
-}
-
-table, td, th {
-    border: 1px solid;
-    height:20%;
-    table-layout: fixed;
-  }
-  
+/* Table styling for word game grid */
 table {
-    width: 100%;
-    border-collapse: collapse;
+    background-color: #ffffffb3; /* Semi-transparent white background */
+    width: 80vw; /* Width relative to viewport width */
+    height: 75vh; /* Height relative to viewport height */
+    font-size: larger;
     text-align: center;
-    height:100%;
-    font-size: 250%;
-  }
-
-.buttons a{
-    position: fixed;
-    text-decoration: none;
-    font-size: x-large;
-    display: inline-block;
-    background-color: white;
-    color: black;
-    padding:0.5%;
-    padding-right: 1.5%;
-    padding-left: 1.5%;
-    left:47.5%;
-    bottom:5%;
-    border-color: black;
-    border-style: solid;
+    margin: auto;
+    margin-top: 25%; /* Add space from the top */
+    border-collapse: collapse; /* Collapse table borders */
 }
 
-.buttons a:hover{
-    background-color: black;
-    color: white;
+/* Table cell styling */
+td {
+    padding: 2%;
+    border: solid 1px darkgreen; /* Green border for table cells */
 }
 
-.instimages{
+/* Textbox styling */
+.textbox {
+    text-align: center;
+    font-size: larger;
+    padding: 1%;
     position: fixed;
-    top: 24%;
-    left: 38%;
+    bottom: 1%; /* Position at the bottom */
+    width: 90%;
+    left: 4%;
+}
+
+/* End popup container styling, hidden by default */
+.endPopup {
+    position: fixed;
+    height: 70%;
+    width: 80%;
+    background-color: #ffffffb3; /* Semi-transparent white background */
+    margin: 10%;
+    left: 0;
+    top: 0;
+    display: none; /* Hidden initially */
+}
+
+/* End button container styling */
+.endButt {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    width: 98%; /* Take 98% width */
+    padding: 1%;
+    font-size: 200%; /* Large font size for buttons */
+}
+
+/* End text container styling */
+.endText {
+    text-align: center;
+}
+
+/* End game action section styling */
+.endAct {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Center the action section */
+}
+
+/* End game action heading styling */
+.endAct h2 {
+    margin: 2%;
+    padding: 2%;
+    border: solid 2px green; /* Green border around action heading */
+}
+
+/* Media query for screens with width of 650px or larger */
+@media (min-width:650px){
+
+    .header {
+        width: 98%;
+        padding: 1%; /* Reduce padding */
+    }
+
+    /* Hover effect for header links */
+    .header h1 a:hover, .header h1 i:hover {
+        color: black;
+    }
+
+    /* Page and selection page styling */
+    .page, .selPage {
+        margin-top: 10vw; /* Adjust margin for larger screens */
+        height: max-content; /* Adjust height */
+    }
+
+    .page h1, .selPage h1 {
+        padding: 2%;
+    }
+
+    /* Hover effect for page and selection page headers */
+    .page h1:hover, .settButt a:hover, .selPage h1:hover, .endAct h2:hover {
+        background-color: darkgreen;
+        color: white; /* Change background and text color on hover */
+    }
+
+    .popup {
+        font-size: ''; /* Empty font-size to use default size */
+    }
+
+    /* Image size inside the popup for larger screens */
+    .popup img {
+        width: 25%;
+    }
+
+    /* Hover effects for icons in popup */
+    .popup .fa:hover {
+        color: red;
+    }
+
+    .popup .fa-solid:hover {
+        color: darkgreen;
+    }
+
+    .selPage {
+        margin-top: 15%; /* Adjust margin */
+    }
+
+    /* Table resizing for larger screens */
+    table {
+        margin-top: 12vw;
+        width: 70%; /* Adjust table width */
+        height: 65vh; /* Adjust table height */
+    }
+
+    /* Textbox resizing for larger screens */
+    .textbox {
+        left: 29%;
+        width: 40%; /* Adjust width */
+    }
+
+    /* Hover effects for end game buttons */
+    .endButt .fa:hover {
+        color: red;
+    }
+
+    .endButt .fa-solid:hover {
+        color: green;
+    }
 }
