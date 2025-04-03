@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport settings for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking to external CSS for page styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connecting to Google Fonts for custom font styling (Funnel Display font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section with the game title and home icon -->
+    <div class="header" id="header">
+        <!-- The main game title, which is a link to the home page -->
+        <h1><a href="home.html">What in the Word?</a></h1>
+        <!-- A home icon that links back to the homepage -->
+        <h1><a href="home.html"><i class="fa-solid fa-house"></i></a></h1> 
+    </div>
+
+    <!-- Table for displaying the 6x5 game grid -->
+    <table>
+      <tr>
+        <!-- First row of cells representing the first attempt's guesses -->
+        <td id="1">?</td>
+        <td id="2">?</td>
+        <td id="3">?</td>
+        <td id="4">?</td>
+        <td id="5">?</td>
+        <td id="6">?</td>
+      </tr>
+      <tr>
+        <!-- Second row of cells representing the second attempt's guesses -->
+        <td id="7">?</td>
+        <td id="8">?</td>
+        <td id="9">?</td>
+        <td id="10">?</td>
+        <td id="11">?</td>
+        <td id="12">?</td>
+      </tr>
+      <tr>
+        <!-- Third row of cells representing the third attempt's guesses -->
+        <td id="13">?</td>
+        <td id="14">?</td>
+        <td id="15">?</td>
+        <td id="16">?</td>
+        <td id="17">?</td>
+        <td id="18">?</td>
+      </tr>
+      <tr>
+        <!-- Fourth row of cells representing the fourth attempt's guesses -->
+        <td id="19">?</td>
+        <td id="20">?</td>
+        <td id="21">?</td>
+        <td id="22">?</td>
+        <td id="23">?</td>
+        <td id="24">?</td>
+      </tr>
+      <tr>
+        <!-- Fifth row of cells representing the fifth and final attempt's guesses -->
+        <td id="25">?</td>
+        <td id="26">?</td>
+        <td id="27">?</td>
+        <td id="28">?</td>
+        <td id="29">?</td>
+        <td id="30">?</td>
+      </tr>      
+    </table>    
+
+    <!-- Textbox for entering the guess -->
+    <input type="text" class="textbox" id="textBox" placeholder="Type Here...">
+
+    <!-- Popup that appears when the game ends -->
+    <div id="endPopup" class="endPopup">
+      <div class="endButt">
+        <!-- Button to access the dictionary -->
+        <i class="fa-solid fa-book" onclick="dict()"></i>
+        <!-- Close button to dismiss the end popup -->
+        <i class="fa fa-times" onclick="closePopup()"></i>
+      </div>
+
+      <div class="endText">
+        <!-- Placeholder for displaying the result (correct or incorrect) -->
+        <h1 id="identifier">Placeholder for correct or wrong</h1>
+        <!-- Placeholder for the number of attempts left -->
+        <h2 id="tries">Placeholder for tries</h2>
+        <!-- Placeholder for the correct word -->
+        <h3 id="word">Placeholder for correct word</h3>
+      </div>
+
+      <div class="endAct">
+        <!-- Button to reload the game and play again -->
+        <h2 id="again" onclick="reload()">Play Again</h2>
+        <!-- Button to go back to the home page -->
+        <h2 id="home" onclick="home()">Home</h2>  
+      </div>
+
+    </div>
+</body>
+
+<!-- Loading FontAwesome icons and external JS files -->
+<script src="https://kit.fontawesome.com/7e891fcb86.js" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+<!-- Linking to the script for the 6-letter game logic -->
+<script src="six.js"></script>
+</html>
