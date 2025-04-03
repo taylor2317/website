@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     color: hsl(30, 10%, 34%);
     margin-top:0px;
@@ -178,4 +179,186 @@ th{
     .subtitle{
         font-size: 20px;
     }
+=======
+body{
+    color: hsl(30, 10%, 34%);
+    margin-top:0px;
+    margin-left:0px;
+    padding-bottom: 10%;
+}
+
+@font-face {
+    font-family: Desc-Text;
+    src: url(fonts/outfit/static/Outfit-Regular.ttf);}
+@font-face {
+    font-family: Bold-Inst;
+    src: url(fonts/outfit/static/Outfit-Black.ttf);}
+@font-face {
+    font-family: Prep;
+    src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);}
+@font-face {
+    font-family: Title;
+    src: url(fonts/young-serif/YoungSerif-Regular.ttf);
+  }
+
+.tile{
+    background-color: white;
+    width: 102%;
+    padding-bottom: -10%;
+}
+
+img{
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.tile-content{
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+.title{
+    font-size: 300%;
+    font-family: title;
+    color: hsl(24, 5%, 18%);
+}
+
+.desc{
+    margin-top: 1vh;
+    font-family: Desc-Text;
+}
+
+.prep{
+    width: 94%;
+    background-color: hsl(330, 100%, 98%);
+    padding: 1%;
+    border-radius: 2%;
+    padding-left: 5%;
+    padding-top: 5%;
+    border-radius: 10px;
+}
+
+.prep-title{
+    color:hsl(332, 51%, 32%);
+    font-family: prep;
+    font-weight: bold;
+    font-size: 150%;
+    margin-left: 1.5%;
+}
+
+.prep-text{
+    font-family: prep;
+    margin-top: 2%;
+    margin-bottom: -0.5%;
+}
+
+.prep-text, ul, ol, .bodyText, li::marker, td, th, .desc{
+    font-size: 110%;
+}
+
+ul, ol{
+    margin-left: -4%;
+}
+
+ul span, ol span{
+    margin-left: 1.5%;
+}
+
+.subtitle{
+    color: hsl(14, 45%, 36%);
+    padding-top: 3%;
+    font-family: title;
+    font-size: 175%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+}
+
+.bodyText{
+    font-family: desc-text;
+}
+
+hr{
+    border:hsl(30, 18%, 87%) solid 0.01%;
+    margin-top: 3%;
+    width: 95%;
+}
+
+ol {
+    line-height: 25px;
+    list-style-position: outside;
+}
+
+li + li{
+    margin-top: 5px;
+}
+
+li::marker{
+    color:hsl(14, 45%, 36%);
+    font-family: prep;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+p{
+    margin-top: -3%;
+    margin-left: 1%;
+}
+
+table{
+    width: 97%;
+    text-align: left;
+    margin-left: 1%;;
+}
+
+td,th {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding:1%;
+    padding-left: 3%;
+}
+
+th{
+    color:hsl(14, 45%, 36%)
+}
+
+.bottom {
+    border: 0px, solid;
+    padding-bottom: 5%;
+}
+
+@media (min-width: 500px) {
+    body{
+        background-color: hsl(30, 54%, 90%);
+    }
+    .tile{
+        width: 40%;
+        margin-left:30%;
+        margin-top:10%;
+        border-radius: 20px;
+    }
+    img{   
+        width: 90%;
+        padding:5%;
+        border-radius: 35px;
+    }
+    .prep-text, ul, ol, .bodyText, li::marker, td, th, .desc{
+        font-size:12px;
+    }
+    ol {
+        line-height: 15px;
+    }
+    .prep-title{
+        font-size: 15px;
+    }
+    .prep{
+        padding-left: 1%;
+        padding-top: 1%;
+    }
+    .title{
+        font-size: 30px;
+        margin-bottom: -3%;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+>>>>>>> 6384089b09558558b2ec939a00462d6d80053f1a
 }
