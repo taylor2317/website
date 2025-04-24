@@ -45,25 +45,23 @@ function popupClose() {
     alevel = false;
 }
 
-function prev() {
-    i++;
-    if (i >= getCurrentArray().length) {
-        i = 0;
-    }
+function next() {
+    i = (i + 1) % getCurrentArray().length;
     updateImage();
 }
 
-function next() {
-    i--;
-    if (i < 0) {
-        i = getCurrentArray().length - 1;
-    }
+function prev() {
+    i = (i - 1 + getCurrentArray().length) % getCurrentArray().length;
     updateImage();
 }
 
 function updateImage() {
-    document.getElementById("popupImg").src = getCurrentArray()[i];
-    updateDots();
+    const img = document.getElementById("popupImg");
+    const array = getCurrentArray();
+    if (img && array.length > 0) {
+        img.src = array[i];
+        updateDots();
+    }
 }
 
 function getCurrentArray() {
@@ -72,6 +70,11 @@ function getCurrentArray() {
 
 function updateDots() {
     const dots = document.querySelectorAll(".dots i");
-    dots.forEach(dot => dot.classList.remove("active"));
-    document.getElementById(i + 1).classList.add("active");
+    dots.forEach((dot, index) => {
+        if (index === i) {
+            dot.classList.add("active");
+        } else {
+            dot.classList.remove("active");
+        }
+    });
 }
