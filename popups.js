@@ -21,37 +21,47 @@ const ALevel = [
 ];
 
 function GCSEDTPopup() {
+    console.log("GCSE Popup activated.");
     gcse = true;
     alevel = false;
     i = 0;
+    console.log("GCSE is set to true. A-Level is set to false. Image index (i) reset to 0.");
     popups();
 }
 
 function ALevelDTPopup() {
+    console.log("A-Level Popup activated.");
     alevel = true;
     gcse = false;
     i = 0;
+    console.log("A-Level is set to true. GCSE is set to false. Image index (i) reset to 0.");
     popups();
 }
 
 function popups() {
+    console.log("Popup displayed.");
     document.querySelector('.popup').style.display = 'block';
     updateImage();
 }
 
 function popupClose() {
+    console.log("Popup closed.");
     document.querySelector('.popup').style.display = 'none';
     gcse = false;
     alevel = false;
 }
 
 function next() {
+    console.log("Next button clicked.");
     i = (i + 1) % getCurrentArray().length;
+    console.log("Image index updated to " + i);
     updateImage();
 }
 
 function prev() {
+    console.log("Previous button clicked.");
     i = (i - 1 + getCurrentArray().length) % getCurrentArray().length;
+    console.log("Image index updated to " + i);
     updateImage();
 }
 
@@ -59,21 +69,36 @@ function updateImage() {
     const img = document.getElementById("popupImg");
     const array = getCurrentArray();
     if (img && array.length > 0) {
+        console.log("Updating image with source: " + array[i]);
         img.src = array[i];
         updateDots();
+    } else {
+        console.log("No image found or array is empty.");
     }
 }
 
 function getCurrentArray() {
-    return gcse ? GCSE : ALevel;
+    if (gcse) {
+        console.log("Returning GCSE image array.");
+        return GCSE;
+    } else if (alevel) {
+        console.log("Returning A-Level image array.");
+        return ALevel;
+    } else {
+        console.log("No image array selected.");
+        return [];
+    }
 }
 
 function updateDots() {
     const dots = document.querySelectorAll(".dots i");
+    console.log("Updating dots.");
     dots.forEach((dot, index) => {
         if (index === i) {
+            console.log("Activating dot " + index);
             dot.classList.add("active");
         } else {
+            console.log("Deactivating dot " + index);
             dot.classList.remove("active");
         }
     });
