@@ -40,7 +40,20 @@ function whitespace() {
 
     // Trim final result
     text = text.trim();
-
+    
+    text = replaceEpisodeLinks(text);
     inputBox.value = text;
     alert("Whitespace cleanup complete!");
+}
+
+function replaceEpisodeLinks(text) {
+    return text.replace(/\[\[(.*?)\]\]/g, (match, innerText) => {
+        if (/Episode\s+\d{3}/.test(innerText)) {
+            const parenMatch = innerText.match(/\((.*?)\)/);
+            if (parenMatch) {
+                return `[[${parenMatch[1]}]]`;
+            }
+        }
+        return match;
+    });
 }
