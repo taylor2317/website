@@ -1,13 +1,12 @@
 # COLOUR PALETTE:
-#008080ff
-#15b295ff
-#ffffffff
-#d3d3d3ff
+#008080ff <br>
+#15b295ff <br>
+#ffffffff <br>
+#d3d3d3ff <br>
 #000000ff
 
 # SITE LINK:
-
-https://milangudka.netlify.app/
+https://milangudka.com/
 
 # HEADER:
 ```htm
@@ -47,6 +46,7 @@ https://milangudka.netlify.app/
         <a href="contact.html">Contact Me</a><br>
     </div>
 ```
+
 # FOOTER:
 ```htm
     <div class="footer">
