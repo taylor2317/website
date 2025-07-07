@@ -1,0 +1,200 @@
+body {
+    background-image: url(/images/bg-mobile.svg);
+    background-size: 375 373;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    display: block;
+}
+
+.poppins{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+.left{
+    padding: 0%;
+    width: 100%;
+}
+
+.open-sans{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.right{
+    width: 100%;
+    margin-top: -30%;
+}
+
+.logo{
+    margin-top: 5%;
+    height: 30px;
+    position:relative;
+}
+
+.ill{
+    margin-top: 15%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    font-family: poppins;
+    font-size: 150%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    margin-top: 50%;
+    color: white;
+}
+
+.desc{
+    font-family: open sans;
+    color:white;
+    font-size: 13.8px;
+    line-height: 25px;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.butt{
+    margin-top: 3%;
+    padding: 4%;
+    width: 60%;
+    font-family: open sans;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    border: 0px;
+    border-radius: 30px;
+    font-size: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.658);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.butt:hover{
+    color:white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.socials{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.socials a{
+    color:white;
+    border: solid;
+    border-radius: 100%;
+    padding: 2%;
+    margin: 2%;
+}
+
+.socials a:hover{
+    color:hsl(300, 69%, 71%);
+    border: solid 2px hsl(300, 69%, 71%)
+}
+
+img{
+    color:white;
+}
+
+.title, .desc {
+    text-align: center;
+}
+
+.fa-facebook-f{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.fa-twitter{
+    padding-left: 0.25%;
+    padding-right: 0.25%;
+}
+
+.fa-instagram{
+    padding-left: 0.25%;
+    padding-right: 0.25%;
+}
+
+@media (min-width: 500px) {
+    body {
+        background-image: url(/images/bg-desktop.svg);
+        background-size: 1318 800px;
+        display: flex;
+        overflow-y: hidden;
+    }
+
+    .fa-facebook-f{
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+    .title, .desc {
+        text-align: left;
+    }
+    .title {
+        font-size: 200%;
+    }
+    .desc, .butt {
+        font-size: 100%;
+    }
+    .socials{
+        position: fixed;
+        width: 100%;
+        text-align: right;
+        font-size: 20px;
+        left: 0px;
+        bottom: 0px;
+    }
+    .socials a{
+        padding: 1%;
+        margin: 0.5%;
+    }
+    .ill{
+        width: 125%;
+        margin-top: 15%;
+    }
+    .logo{
+        margin-top: 0%;
+        height: 50px;
+    }
+    .left{
+        padding: 5%;
+        width: 50%;
+    }
+    .right{
+        width: 50%;
+        padding-left: 10%;
+        padding-right: 7.5%;
+        margin-top: -30px;
+    }
+    .title{
+        font-size: 250%;
+        padding: 0px;
+        width: 100%;
+    }
+    .desc{
+        padding: 0px;
+        width: 100%;
+    }
+    .butt{
+        padding: 3%;
+        width: 40%;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+}
+

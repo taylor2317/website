@@ -1,0 +1,86 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    padding: 0px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, teal, #1ca088);
+    font-family: Funnel Display;
+}
+
+.pageBlock {
+    width:90%;
+    margin: auto;
+    margin-top: 2.5%;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding:2.5%;
+    height: max-content;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+
+h1 a, h1{
+    color: teal;
+}
+
+.card{
+    width: 80%;
+    margin: auto;
+    padding:2vw;
+    background-color: white;
+    border-radius: 20px;
+    border: lightgrey solid 1px; 
+    box-shadow: 2px 2px 10px lightgrey;
+    margin-bottom: 5%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+i{
+    color: teal;
+    font-size: 200%;
+}
+
+.card:hover{
+    transition: 0.5s;
+    background-color: lightgrey;
+}
+
+@media (min-width:800px){
+    .cardCont{
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin-top: 3.5%;
+    }
+
+    .card, .portCard, .soloCard {
+        width: 80%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        padding: 2%;
+        background-color: white;
+        border-radius: 20px;
+        border: lightgrey solid 1px; 
+        box-shadow: 2px 2px 10px lightgrey;
+        transition: 0.5s;
+        margin-bottom: -1%;
+        color: black;
+        text-decoration: none;
+    }
+
+    .pageBlock {
+        width:60%;
+        margin: auto;
+        margin-top: 2%;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px;
+        padding:2%;
+    }
+}
