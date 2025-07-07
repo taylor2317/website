@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Make the page responsive on mobile and tablet devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preconnect to Google's font servers for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Link to a custom font (Funnel Display) from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section with game title and home link -->
+    <div class="header" id="header">
+        <!-- Game Title -->
+        <h1><a href="home.html">What in the Word?</a></h1>
+        <!-- Home icon as a clickable link to home page -->
+        <h1><a href="home.html"><i class="fa-solid fa-house"></i></a></h1> 
+    </div>
+
+    <!-- Table for displaying letters with placeholders -->
+    <table>
+      <tr>
+        <td id="1">?</td>
+        <td id="2">?</td>
+        <td id="3">?</td>
+        <td id="4">?</td>
+      </tr>
+      <tr>
+        <td id="5">?</td>
+        <td id="6">?</td>
+        <td id="7">?</td>
+        <td id="8">?</td>
+      </tr>
+      <tr>
+        <td id="9">?</td>
+        <td id="10">?</td>
+        <td id="11">?</td>
+        <td id="12">?</td>
+      </tr>
+      <tr>
+        <td id="13">?</td>
+        <td id="14">?</td>
+        <td id="15">?</td>
+        <td id="16">?</td>
+      </tr>
+      <tr>
+        <td id="17">?</td>
+        <td id="18">?</td>
+        <td id="19">?</td>
+        <td id="20">?</td>
+      </tr>      
+    </table>    
+
+    <!-- Input field for user to type their guess -->
+    <input type="text" class="textbox" id="textBox" placeholder="Type Here...">
+
+    <!-- Popup that appears after the game ends -->
+    <div id="endPopup" class="endPopup">
+        <!-- Buttons inside the popup (dictionary and close) -->
+        <div class="endButt">
+            <i class="fa-solid fa-book" onclick="dict()"></i> <!-- Dictionary button -->
+            <i class="fa fa-times" onclick="closePopup()"></i> <!-- Close popup button -->
+        </div>
+
+        <!-- Text displayed in the popup (feedback for the user) -->
+        <div class="endText">
+            <h1 id="identifier">Placeholder for correct or wrong</h1>
+            <h2 id="tries">Placeholder for tries</h2>
+            <h3 id="word">Placeholder for correct word</h3>
+        </div>
+
+        <!-- Actions inside the popup (Play Again, Go to Home) -->
+        <div class="endAct">
+            <h2 id="again" onclick="reload()">Play Again</h2> <!-- Play again button -->
+            <h2 id="home" onclick="home()">Home</h2>  <!-- Home button -->
+        </div>
+    </div>
+</body>
+
+<!-- Font Awesome Script for icons (used for house and dictionary icons) -->
+<script src="https://kit.fontawesome.com/7e891fcb86.js" crossorigin="anonymous"></script>
+
+<!-- Custom JavaScript files for game logic and functionality -->
+<script src="scripts.js"></script>
+<script src="four.js"></script>
+</html>
