@@ -3,22 +3,23 @@ let alevel = false;
 let i = 0;
 
 const GCSE = [
-    "/Resources/Coursework/GCSE DT/GCSE DT Front Cover.png",
-    "/Resources/Coursework/GCSE DT/GCSE DT Contextual Problem.png",
-    "/Resources/Coursework/GCSE DT/GCSE DT Product Analysis.png",
-    "/Resources/Coursework/GCSE DT/GCSE DT Design Ideas.png",
-    "/Resources/Coursework/GCSE DT/GCSE DT Developed Ideas.png",
-    "/Resources/Coursework/GCSE DT/GCSE DT Orthographic.png"
+    "https://milangudka.com/Resources/Coursework/GCSE%20DT/GCSE%20DT%20Front%20Cover.png",
+    "https://milangudka.com/Resources/Coursework/GCSE%20DT/GCSE%20DT%20Contextual%20Problem.png",
+    "https://milangudka.com/Resources/Coursework/GCSE%20DT/GCSE%20DT%20Product%20Analysis.png",
+    "https://milangudka.com/Resources/Coursework/GCSE%20DT/GCSE%20DT%20Design%20Ideas.png",
+    "https://milangudka.com/Resources/Coursework/GCSE%20DT/GCSE%20DT%20Developed%20Ideas.png",
+    "https://milangudka.com/Resources/Coursework/GCSE%20DT/GCSE%20DT%20Orthographic.png"
 ];
 
 const ALevel = [
-    "/Resources/Coursework/A-Level DT/A-Level DT Front Cover.png",
-    "/Resources/Coursework/A-Level DT/A-Level DT Secondary Research.png",
-    "/Resources/Coursework/A-Level DT/A-Level DT Design Concepts.png",
-    "/Resources/Coursework/A-Level DT/A-Level DT Client Feedback.png",
-    "/Resources/Coursework/A-Level DT/A-Level DT Assessing Feedback.png",
-    "/Resources/Coursework/A-Level DT/A-Level DT Health & Safety.png"
+    "https://milangudka.com/Resources/Coursework/A-Level%20DT/A-Level%20DT%20Front%20Cover.png",
+    "https://milangudka.com/Resources/Coursework/A-Level%20DT/A-Level%20DT%20Secondary%20Research.png",
+    "https://milangudka.com/Resources/Coursework/A-Level%20DT/A-Level%20DT%20Design%20Concepts.png",
+    "https://milangudka.com/Resources/Coursework/A-Level%20DT/A-Level%20DT%20Client%20Feedback.png",
+    "https://milangudka.com/Resources/Coursework/A-Level%20DT/A-Level%20DT%20Assessing%20Feedback.png",
+    "https://milangudka.com/Resources/Coursework/A-Level%20DT/A-Level%20DT%20Health%20%26%20Safety.png"
 ];
+
 
 function GCSEDTPopup() {
     console.log("GCSE Popup activated.");
@@ -41,6 +42,7 @@ function ALevelDTPopup() {
 function popups() {
     console.log("Popup displayed.");
     document.querySelector('.popup').style.display = 'block';
+    generateDots();
     updateImage();
 }
 
@@ -70,13 +72,14 @@ function updateImage() {
     const array = getCurrentArray();
     if (img && array.length > 0) {
         console.log("Updating image with source: " + array[i]);
-        img.src = array[i];
-        generateDots(); // Create dots matching the current array
-        updateDots();   // Highlight the current one
+        img.src = array[i]; // This must match the correct full path
+        console.log("Image src set to:", img.src);
+        updateDots();
     } else {
         console.log("No image found or array is empty.");
     }
 }
+
 
 function getCurrentArray() {
     if (gcse) {
@@ -102,10 +105,18 @@ function generateDots() {
 
     array.forEach((_, index) => {
         const dot = document.createElement("i");
+        dot.classList.add("fa-solid", "fa-circle");
         if (index === i) dot.classList.add("active");
+
+        dot.addEventListener("click", () => {
+            i = index;
+            updateImage();
+        });
+
         dotsContainer.appendChild(dot);
     });
 }
+
 
 function updateDots() {
     const dots = document.querySelectorAll(".dots i");
