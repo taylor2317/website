@@ -71,7 +71,8 @@ function updateImage() {
     if (img && array.length > 0) {
         console.log("Updating image with source: " + array[i]);
         img.src = array[i];
-        updateDots();
+        generateDots(); // Create dots matching the current array
+        updateDots();   // Highlight the current one
     } else {
         console.log("No image found or array is empty.");
     }
@@ -90,17 +91,28 @@ function getCurrentArray() {
     }
 }
 
+function generateDots() {
+    const array = getCurrentArray();
+    const dotsContainer = document.querySelector(".dots");
+
+    if (!dotsContainer) return;
+
+    // Clear previous dots
+    dotsContainer.innerHTML = "";
+
+    array.forEach((_, index) => {
+        const dot = document.createElement("i");
+        if (index === i) dot.classList.add("active");
+        dotsContainer.appendChild(dot);
+    });
+}
+
 function updateDots() {
     const dots = document.querySelectorAll(".dots i");
     console.log("Updating dots.");
-    const dotCount = dots.length;
 
     dots.forEach((dot, index) => {
-        // Reverse the index mapping
-        const dotIndex = dotCount - 1 - index;
-
-        if (dotIndex === i) {
-            console.log("Activating dot " + dotIndex);
+        if (index === i) {
             dot.classList.add("active");
         } else {
             dot.classList.remove("active");
