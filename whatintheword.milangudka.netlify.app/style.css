@@ -1,0 +1,266 @@
+/* Background and font styling for the body */
+body {
+    background-image: url("Background.jpg"); /* Set background image */
+    background-size: cover; /* Make sure the background image covers the entire body */
+    font-family: Funnel Display; /* Set the custom font for the body */
+}
+
+/* Header styling */
+.header {
+    position: fixed; /* Fixed position at the top */
+    display: flex; 
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Align items in the center vertically */
+    background-color: #ffffffb3; /* Semi-transparent white background */
+    top: 0; /* Align to top */
+    left: 0; /* Align to the left */
+    width: 90%; /* Take 90% of the width */
+    padding: 1%; 
+    padding-left: 5%; /* Add padding to left */
+    padding-right: 5%; /* Add padding to right */
+}
+
+/* Header links and titles styling */
+.header a, .page h1, .settButt a, .selPage h1{
+    color: darkgreen; /* Set link and heading color to dark green */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Styling for main page and selection page */
+.page, .selPage {
+    justify-content: center; /* Center the content */
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    margin-top: 20%; /* Add space from top */
+}
+
+/* Page and selection page heading styling */
+.page h1, .selPage h1, .endAct h2 {
+    width: max-content; /* Set width to content size */
+    text-align: center; /* Center text */
+    background-color: #ffffffb3; /* Semi-transparent white background */
+    padding: 2%;
+    margin-bottom: 1px; /* Add small margin at bottom */
+}
+
+/* Popup styling, hidden by default */
+.popup{
+    display: none; /* Hidden initially */
+    position: fixed; 
+    top: 18%; /* Positioned from the top */
+    left: 3%; /* Positioned from the left */
+    min-height: 70%;
+    width: 90%;
+    text-align: center;
+    background-color: #ffffffb3; /* Semi-transparent white background */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    font-size: small;
+}
+
+/* Close button (X) in popup */
+.popup .fa {
+    position: fixed; 
+    top: 18%;
+    right: 3%;
+    font-size: 200%; /* Large font size */
+    padding: 1%;
+}
+
+/* Styling for specific icons in popup */
+.popup .fa-solid {
+    font-size: 150%; /* Slightly smaller for solid icons */
+}
+
+/* Images inside the popup */
+.popup img {
+    width: 80%; /* Set image width to 80% of parent */
+}
+
+/* Styling for various instruction backgrounds */
+.instred, .instyell, .instgreen {
+    margin-top: 1%;
+    padding: 0.5%;
+}
+
+/* Red background for instructions */
+.instred {
+    background-color: #ea9999;
+}
+
+/* Yellow background for instructions */
+.instyell {
+    background-color: #ffe599;
+}
+
+/* Green background for instructions */
+.instgreen {
+    background-color: #93c47d;
+}
+
+/* Settings button container styling */
+.settButt {
+    margin: 2.5%;
+}
+
+/* Settings button styling */
+.settButt a {
+    background-color: white;
+    border: darkgreen 1px solid;
+    font-weight: bold;
+    padding: 1%;
+    font-size: larger;
+}
+
+/* Selection page styling */
+.selPage {
+    margin-top: 50%;
+}
+
+/* Table styling for word game grid */
+table {
+    background-color: #ffffffb3; /* Semi-transparent white background */
+    width: 80vw; /* Width relative to viewport width */
+    height: 75vh; /* Height relative to viewport height */
+    font-size: larger;
+    text-align: center;
+    margin: auto;
+    margin-top: 25%; /* Add space from the top */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+/* Table cell styling */
+td {
+    padding: 2%;
+    border: solid 1px darkgreen; /* Green border for table cells */
+}
+
+/* Textbox styling */
+.textbox {
+    text-align: center;
+    font-size: larger;
+    padding: 1%;
+    position: fixed;
+    bottom: 1%; /* Position at the bottom */
+    width: 90%;
+    left: 4%;
+}
+
+/* End popup container styling, hidden by default */
+.endPopup {
+    position: fixed;
+    height: 70%;
+    width: 80%;
+    background-color: #ffffffb3; /* Semi-transparent white background */
+    margin: 10%;
+    left: 0;
+    top: 0;
+    display: none; /* Hidden initially */
+}
+
+/* End button container styling */
+.endButt {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    width: 98%; /* Take 98% width */
+    padding: 1%;
+    font-size: 200%; /* Large font size for buttons */
+}
+
+/* End text container styling */
+.endText {
+    text-align: center;
+}
+
+/* End game action section styling */
+.endAct {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Center the action section */
+}
+
+/* End game action heading styling */
+.endAct h2 {
+    margin: 2%;
+    padding: 2%;
+    border: solid 2px green; /* Green border around action heading */
+}
+
+/* Media query for screens with width of 650px or larger */
+@media (min-width:650px){
+
+    .header {
+        width: 98%;
+        padding: 1%; /* Reduce padding */
+    }
+
+    /* Hover effect for header links */
+    .header h1 a:hover, .header h1 i:hover {
+        color: black;
+    }
+
+    /* Page and selection page styling */
+    .page, .selPage {
+        margin-top: 10vw; /* Adjust margin for larger screens */
+        height: max-content; /* Adjust height */
+    }
+
+    .page h1, .selPage h1 {
+        padding: 2%;
+    }
+
+    /* Hover effect for page and selection page headers */
+    .page h1:hover, .settButt a:hover, .selPage h1:hover, .endAct h2:hover {
+        background-color: darkgreen;
+        color: white; /* Change background and text color on hover */
+    }
+
+    .popup {
+        font-size: ''; /* Empty font-size to use default size */
+    }
+
+    /* Image size inside the popup for larger screens */
+    .popup img {
+        width: 25%;
+    }
+
+    /* Hover effects for icons in popup */
+    .popup .fa:hover {
+        color: red;
+    }
+
+    .popup .fa-solid:hover {
+        color: darkgreen;
+    }
+
+    .selPage {
+        margin-top: 15%; /* Adjust margin */
+    }
+
+    /* Table resizing for larger screens */
+    table {
+        margin-top: 12vw;
+        width: 70%; /* Adjust table width */
+        height: 65vh; /* Adjust table height */
+    }
+
+    /* Textbox resizing for larger screens */
+    .textbox {
+        left: 29%;
+        width: 40%; /* Adjust width */
+    }
+
+    /* Hover effects for end game buttons */
+    .endButt .fa:hover {
+        color: red;
+    }
+
+    .endButt .fa-solid:hover {
+        color: green;
+    }
+}
