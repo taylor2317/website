@@ -1,4 +1,6 @@
 function whitespace() {
+    console.log("Function triggered");
+
     const inputBox = document.getElementById("inputBox");
     let text = inputBox.value;
 
@@ -46,13 +48,25 @@ function whitespace() {
         return match;
     });
 
-    // Ensure space around dash between links (e.g., ']]- [[' → ']] - [[')
-    text = text.replace(/\]\][ \u00A0]*-[ \u00A0]*\[\[/g, ']] - [[');
+    // Fix spacing around dashes between links
+    text = text.replace(/\]\][\s\u00A0]*-[\s\u00A0]*\[\[/g, ']] - [[');
 
     // Trim final result
     text = text.trim();
-    
+
     text = replaceEpisodeLinks(text);
     inputBox.value = text;
     alert("Whitespace cleanup complete!");
+}
+
+function replaceEpisodeLinks(text) {
+    return text.replace(/\[\[(.*?)\]\]/g, (match, innerText) => {
+        if (/Episode\s+\d{3}/.test(innerText)) {
+            const parenMatch = innerText.match(/\((.*?)\)/);
+            if (parenMatch) {
+                return `[[${parenMatch[1]}]]`;
+            }
+        }
+        return match;
+    });
 }
