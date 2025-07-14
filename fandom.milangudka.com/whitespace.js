@@ -38,22 +38,21 @@ function whitespace() {
     // Remove 3+ consecutive newlines
     text = text.replace(/\n{3,}/g, '\n\n');
 
+    // Simplify links like [[Page|Page&nbsp;]] → [[Page]]
+    text = text.replace(/\[\[([^\|\]]+)\|([^\]]*?)\s*(?:&nbsp;| )*\]\]/g, (match, page, label) => {
+        if (page.trim() === label.trim()) {
+            return `[[${page.trim()}]]`;
+        }
+        return match;
+    });
+
+    // Ensure space around dash between links (e.g., ']]- [[' → ']] - [[')
+    text = text.replace(/\]\][ \u00A0]*-[ \u00A0]*\[\[/g, ']] - [[');
+
     // Trim final result
     text = text.trim();
     
     text = replaceEpisodeLinks(text);
     inputBox.value = text;
     alert("Whitespace cleanup complete!");
-}
-
-function replaceEpisodeLinks(text) {
-    return text.replace(/\[\[(.*?)\]\]/g, (match, innerText) => {
-        if (/Episode\s+\d{3}/.test(innerText)) {
-            const parenMatch = innerText.match(/\((.*?)\)/);
-            if (parenMatch) {
-                return `[[${parenMatch[1]}]]`;
-            }
-        }
-        return match;
-    });
 }
