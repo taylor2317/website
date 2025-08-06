@@ -20,7 +20,7 @@ body{
 }
 
 .cont p, h2 {
-    padding: 2%;
+    padding: 0%;
     text-align: center;
     text-decoration: none;
 }
@@ -29,7 +29,7 @@ h2 {
     font-size: 150%;
 }
 
-.socials{
+.socials {
     text-align: center;
     font-size: 200%;
     margin-bottom: 5%;
@@ -50,7 +50,7 @@ h2 {
     align-items: center;
 }
 
-.buttons a{
+.buttons a {
     color: white;
     margin-bottom: 2%;
     text-decoration: none;
@@ -64,16 +64,6 @@ h2 {
     color: teal!important;
     font-weight: bold;
 }
-
-/*
-
- ________________
-/                \
-|   Animations   |
-\________________/
-
-
-*/
 
 .cont span {
     display: inline-block;
@@ -143,7 +133,7 @@ h2 {
     }
 
     .socials a:hover {
-        color: teal;
+        color: cyan;
         text-shadow: none;
     }
 

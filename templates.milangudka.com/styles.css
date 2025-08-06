@@ -45,7 +45,7 @@ i{
     font-size: 200%;
 }
 
-.card:hover{
+.card:hover, .soloCard:hover{
     transition: 0.5s;
     background-color: lightgrey;
 }
@@ -72,6 +72,11 @@ i{
         margin-bottom: -1%;
         color: black;
         text-decoration: none;
+    }
+
+    .soloCard {
+        width: 40%;
+        margin-left: 27.5%;
     }
 
     .pageBlock {
