@@ -284,6 +284,8 @@ price {
     border: 1px solid teal;
     font-size: smaller;
     margin: 1%;
+    height: max-content;
+    white-space: nowrap;
 }
 
 .keyTag{
@@ -296,6 +298,8 @@ price {
     margin: 1%;
     text-transform: uppercase;
     font-weight: bold;
+    height: max-content;
+    white-space: nowrap;
 }
 
 .contForm {
