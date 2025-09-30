@@ -151,7 +151,7 @@ price {
     padding: 3%;
 }
 
-.cv {
+.cv, .references {
     width: 90%;
     background-color: white;
     margin: auto;
@@ -160,9 +160,18 @@ price {
     margin-top: 2%;
 }
 
-.cv h2 {
+.references{
+    background-image: linear-gradient(to bottom right, teal, #15b295);
+}
+
+.cv h2, .references h3 {
     text-align: center;
     color: teal;
+}
+
+.references h3, .references h3 a{
+    color: white;
+    font-weight: 500;
 }
 
 .cv h4 {
