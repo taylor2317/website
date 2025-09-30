@@ -8,9 +8,8 @@ body{
     width: 100%;
     background-image: linear-gradient(to bottom right, teal, #15b295);
     position: fixed;
-    color: white;
+    color: white;   
 }
-
 
 .main404 {
     text-align: center;
@@ -37,7 +36,6 @@ body{
     border:white solid;
     padding: 1%;
     margin: 1%;
-    transition: 0.5s;
 }
 
 .butt a:hover {
