@@ -78,7 +78,10 @@ html {
 .welcome p {
     margin-top: -2.5%;
     margin-bottom: 2.5%;
-    
+}
+
+.welcome h2 {
+    line-height: 150%;
 }
 
 .arrows {
@@ -249,7 +252,7 @@ price {
 
 .portCard hr {
     margin-top: 25px;
-    width: 40%;
+    width: 75%;
     height: 1px;
     border: transparent;
     background-image: linear-gradient(to bottom right, teal, #15b295);
@@ -361,6 +364,7 @@ form p {
 
 .main404 h1 {
     font-size: 500%;
+    margin-top: 5%;
 }
 
 .submit {
@@ -388,11 +392,13 @@ form p {
     display: none;
     position: fixed;
     width: 90%;
+    height: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
     margin: 0;
-    top: 18%;
-    left:5%;
+    top:25%;
     background-image: linear-gradient(to bottom right, teal, #15b295);
     text-align: center;
     box-shadow: 2px 2px 10px teal;
@@ -400,24 +406,29 @@ form p {
 
 .fa-xmark {
     position: absolute;
-    top: 1%;
-    left: 95%;
-    font-size: 200%;
-    padding: 1%;
-    color: white;
+    text-align: center;
+    font-size: 500%;
+    color: red;
+    left: 0;
+    width: 100%;
     transition: 0.2s;
 }
 
 .popupImg {
-    margin-top: 10px;
-    max-width: 50%;
+    position: absolute;
+    top: 17.5%;
+    left: 5%;
+    max-width: 90%;
     aspect-ratio: 1.414 / 1;
     object-fit: cover;
 }
 
 .dots {
-    margin-top: 1%;
-    font-size: 25%;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:83%;
+    font-size: 150%;
     color: lightgrey;
 }
 
@@ -427,7 +438,7 @@ form p {
 }
 
 .dots i.active {
-    font-size: 200%;
+    font-size: 100%;
     color: white;
 }
 
@@ -435,10 +446,11 @@ form p {
     color:white;
     font-size: 300%;
     position: absolute;
-    width: max-content;
+    width: 100%;
+    left:0;
+    top:65%;
     white-space: nowrap;
     margin-top: 18%;
-    width: 100%;
 }
 
 .popupArrows i {
@@ -595,8 +607,48 @@ form p {
         text-shadow: 2px 2px 10px lightgrey;
     }
 
+    .popup {
+        top: 12%;
+        height: 75%;
+        left:4%;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .fa-xmark{
+        top: 2%;
+        left: 95%;
+        width: fit-content;
+        font-size: 250%;
+        color: white;
+    }
+
     .fa-xmark:hover {
         color: red;
+    }
+
+    .popupImg {
+        position:static;
+        margin-top: 10px;
+        max-width: 50%;
+        aspect-ratio: 1.414 / 1;
+        object-fit: cover;
+    }
+
+    .dots {
+        position:static;
+        margin-top: 1%;
+        font-size: 25%;
+    }
+
+    .dots i.active {
+        font-size: 200%;
+        color: white;
+    }
+
+    .popupArrows {
+        top: 0%;
     }
 
     .popupArrows i:hover {
@@ -630,7 +682,6 @@ form p {
     .header a:hover {
         color: lightgrey;
         font-size: 105%;
-        text-shadow: 0px 0px 40px #15b295;
     }
 
     .nav{
