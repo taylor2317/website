@@ -104,6 +104,7 @@ function gameWon() {
     document.getElementById('tries').textContent = "You got it in " + tries + " tries";
     document.getElementById('endPopup').style.backgroundColor = "#93c47d"; // Green color for win
     document.getElementById('textBox').disabled = true; // Disable input box after win
+    updateStats("win"); // <-- Add this
 }
 
 // Display the "You Lost!" popup
@@ -113,6 +114,7 @@ function gameLost() {
     document.getElementById('tries').style.display = "none"; // Hide tries count on loss
     document.getElementById('endPopup').style.backgroundColor = "#ea9999"; // Red color for loss
     document.getElementById('textBox').disabled = true; // Disable input box after loss
+    updateStats("loss"); // <-- Add this
 }
 
 // Open dictionary for the correct word
@@ -135,4 +137,26 @@ function home() {
 // Reload the page to start a new game
 function reload() {
     location.reload();
+}
+
+// Update localStorage stats based on tries
+function updateStats(result) {
+    let key;
+
+    if (result === "win") {
+        // If player won, record which try they won on
+        key = "5-" + tries; 
+    } else if (result === "loss") {
+        // If player lost, always log under '5-6'
+        key = "5-6";
+    }
+
+    let currentValue = localStorage.getItem(key);
+    if (currentValue === null) {
+        localStorage.setItem(key, "1"); // First time, set to 1
+    } else {
+        localStorage.setItem(key, (parseInt(currentValue) + 1).toString()); // Increment
+    }
+
+    console.log("Updated stats:", key, "=", localStorage.getItem(key));
 }

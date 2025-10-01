@@ -101,17 +101,19 @@ function gameWon() {
     document.getElementById('endPopup').style.display = "block";
     document.getElementById('identifier').textContent = "You Won!";
     document.getElementById('tries').textContent = "You got it in " + tries + " tries";
-    document.getElementById('endPopup').style.backgroundColor = "#93c47d"; // Green color for win
-    document.getElementById('textBox').disabled = true; // Disable input box after win
+    document.getElementById('endPopup').style.backgroundColor = "#93c47d"; 
+    document.getElementById('textBox').disabled = true; 
+    updateStats4("win"); // ✅ log the win
 }
 
 // Display the "You Lost!" popup
 function gameLost() {
     document.getElementById('endPopup').style.display = "block";
     document.getElementById('identifier').textContent = "You Lost!";
-    document.getElementById('tries').style.display = "none"; // Hide tries count on loss
-    document.getElementById('endPopup').style.backgroundColor = "#ea9999"; // Red color for loss
-    document.getElementById('textBox').disabled = true; // Disable input box after loss
+    document.getElementById('tries').style.display = "none"; 
+    document.getElementById('endPopup').style.backgroundColor = "#ea9999"; 
+    document.getElementById('textBox').disabled = true; 
+    updateStats4("loss"); // ✅ log the loss
 }
 
 // Open dictionary for the correct word
@@ -134,4 +136,26 @@ function home() {
 // Reload the page to start a new game
 function reload() {
     location.reload();
+}
+
+// Stats trackig
+function updateStats4(result) {
+    let key;
+
+    if (result === "win") {
+        // Track which try the player won on (1–5)
+        key = "4-" + tries;
+    } else if (result === "loss") {
+        // If the player loses after all tries
+        key = "4-6";
+    }
+
+    let currentValue = localStorage.getItem(key);
+    if (currentValue === null) {
+        localStorage.setItem(key, "1"); // First entry
+    } else {
+        localStorage.setItem(key, (parseInt(currentValue) + 1).toString()); // Increment
+    }
+
+    console.log("Updated 4-letter stats:", key, "=", localStorage.getItem(key));
 }

@@ -50,12 +50,12 @@ body {
 .popup{
     display: none; /* Hidden initially */
     position: fixed; 
-    top: 18%; /* Positioned from the top */
+    top: 20%; /* Positioned from the top */
     left: 3%; /* Positioned from the left */
     min-height: 70%;
     width: 90%;
     text-align: center;
-    background-color: #ffffffb3; /* Semi-transparent white background */
+    background-color: #ffffffdd; /* Semi-transparent white background */
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -66,15 +66,15 @@ body {
 /* Close button (X) in popup */
 .popup .fa {
     position: fixed; 
-    top: 18%;
+    top: 20%;
     right: 3%;
-    font-size: 200%; /* Large font size */
+    font-size: 300%; /* Large font size */
     padding: 1%;
 }
 
 /* Styling for specific icons in popup */
 .popup .fa-solid {
-    font-size: 150%; /* Slightly smaller for solid icons */
+    font-size: 250%; /* Slightly smaller for solid icons */
 }
 
 /* Images inside the popup */

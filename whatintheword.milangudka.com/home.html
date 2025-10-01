@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- Link to the external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
 
@@ -71,7 +73,7 @@
     <div class="popup" id="leadPop">
         <i class="fa fa-times" onclick="closePopup()"></i>
         <h1>Leaderboard</h1> <!-- Placeholder for leaderboard content -->
-        <h2>Coming Soon!</h2>
+        <canvas id="attemptsChart"></canvas>
     </div>
 
     <!-- Settings Popup -->
@@ -98,5 +100,12 @@
 <script src="https://kit.fontawesome.com/7e891fcb86.js" crossorigin="anonymous"></script> <!-- Font Awesome icons -->
 <script src="scripts.js"></script> <!-- Custom script for functionality -->
 <script src="popups.js"></script> <!-- Custom script for popup behavior -->
-
+<script src="leaderboard.js"></script> <!-- Custom script for leaderboard behavior -->
 </html>
+
+<style>
+    canvas {
+      max-width: 100%;
+      max-height: 75%;
+    }
+</style>
