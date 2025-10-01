@@ -286,6 +286,7 @@ price {
     margin: 1%;
     height: max-content;
     white-space: nowrap;
+    transition: 0.5s;
 }
 
 .keyTag{
@@ -300,6 +301,7 @@ price {
     font-weight: bold;
     height: max-content;
     white-space: nowrap;
+    transition: 0.5s;
 }
 
 .contForm {
@@ -551,6 +553,7 @@ form p {
 
     .card:hover, .portCard:hover, .soloCard:hover{
         margin-top: -5px;
+        margin-bottom: 5px;
         transition: 0.5s;
         background-color: lightgrey;
     }
