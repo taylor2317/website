@@ -132,12 +132,14 @@ table {
     margin: auto;
     margin-top: 25%; /* Add space from the top */
     border-collapse: collapse; /* Collapse table borders */
+    table-layout: fixed; /* Ensure equal column widths automatically */
 }
 
 /* Table cell styling */
 td {
     padding: 2%;
     border: solid 1px darkgreen; /* Green border for table cells */
+    word-wrap: break-word; /* Ensure content wraps and doesn't expand cell */
 }
 
 /* Textbox styling */
