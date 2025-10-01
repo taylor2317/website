@@ -67,6 +67,8 @@ body {
     padding: 4%;
     width: 60%;
     font-family: open sans;
+    text-decoration: none;
+    text-align: center;
     color: hsl(257, 40%, 49%);
     background-color: white;
     border: 0px;

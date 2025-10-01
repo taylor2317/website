@@ -37,7 +37,6 @@ body{
 }
 
 .desc{
-    margin-top: 5%;
     width: 65%;
     font-size: 15px;
     line-height: 20px;
@@ -156,7 +155,7 @@ body{
         background-image: url(images/bg-pattern-bottom-desktop.svg), url(images/bg-pattern-top-desktop.svg);
     }
     .content{
-        padding-top: 10%;
+        padding-top: 4%;
         padding-bottom: 5%;
     }
     .left{
@@ -218,21 +217,22 @@ body{
         padding-top: 30px;
         padding-bottom: 30px;
         height: 120px;
+        height: fit-content;
         width: 300px;
         margin-left: 0px;
         margin-top: 0px;
         margin-right: 20px;
     }
     .review{
-        margin-top: 50px;
+        margin-top: 20px;
     }
     
     .review2{
-        margin-top: 70px;
+        margin-top: 40px;
     }
     
     .review3{
-        margin-top: 90px;
+        margin-top: 60px;
     }
     
     .author{
