@@ -474,12 +474,12 @@ form p {
     color: white;
 }
 
-.popupArrows a {
+.popupArrows {
     color:white;
     font-size: 300%;
     position: absolute;
-    width: 300%;
-    left:-55%;
+    width: 120%;
+    left: -10%;
     top:5%;
     white-space: nowrap;
     margin-top: 18%;
