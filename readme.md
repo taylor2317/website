@@ -10,8 +10,11 @@ https://milangudka.com/
 
 # HEADER:
 ```htm
-<!DOCTYPE html>
+<!DOCTYPE html">
+<html lang="en">
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2532383532152118"
+     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -19,8 +22,8 @@ https://milangudka.com/
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet">
     <title>Milan Gudka</title>
+    <meta name="description" content="Milan Gudka Personal Portfolio">
     <link rel="icon" href="/Resources/Logo.png">
-
 </head>
 <body>
     <div class="header">
@@ -59,6 +62,7 @@ https://milangudka.com/
         <i class="fa-solid fa-droplet-slash" title="Toggle High-Contrast Mode" onclick="toggleHighContrast()"></i>
     </div>
 </body>
+</html>
 
 <script src="scripts.js"></script>
 <script src="contrast.js"></script>
