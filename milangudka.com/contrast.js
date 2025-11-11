@@ -10,7 +10,9 @@ function toggleHighContrast() {
 
     if (isHighContrastEnabled) {
         enableHighContrast();
-    } else {
+    }
+
+    else {
         disableHighContrast();
     }
 }
@@ -20,7 +22,7 @@ function enableHighContrast() {
     document.querySelectorAll('*').forEach(function(el) {
         const color = window.getComputedStyle(el).color;
         console.log("Element color: " + color);
-        if (color === 'rgb(0, 128, 128)' || color === 'rgb(21, 178, 149)') {
+        if (color === '#008080ff' || color === '#15b295ff') {
             el.style.color = 'black';
             console.log("Changed color to black for element: ", el);
         }
@@ -94,7 +96,9 @@ function removeAllBoxShadows() {
 if (isHighContrastEnabled) {
     console.log("Applying high contrast mode on page load...");
     enableHighContrast();
-} else {
+}
+
+else {
     console.log("High contrast mode is off on page load.");
     disableHighContrast();
 }

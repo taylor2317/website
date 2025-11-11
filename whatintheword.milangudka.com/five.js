@@ -9,6 +9,7 @@ document.getElementById("textBox").addEventListener("keypress", function(event) 
     if (event.key === "Enter") {
         handleGuess();
     }
+
 });
 
 // Initialize tries count and set the maximum tries
@@ -44,11 +45,13 @@ function isValidWord(word) {
         console.log("Invalid word length:", word.length);
         return false;
     }
+
     if (!fivewords.includes(word)) {
         alert("Error - word does not exist. Please enter a valid word");
         console.log("Word not found in list:", word);
         return false;
     }
+
     console.log("Word is valid:", word);
     return true;
 }
@@ -74,10 +77,12 @@ function getLetterColor(letter, randletter, rand) {
         console.log("Letter is correct and in the right position:", letter);
         return '#93c47d'; // Green: correct letter in correct position
     }
+    
     if (rand.includes(letter)) {
         console.log("Letter is in the word but in the wrong position:", letter);
         return '#ffe599'; // Yellow: correct letter in wrong position
     }
+
     console.log("Letter is incorrect:", letter);
     return '#ea9999'; // Red: incorrect letter
 }
@@ -91,6 +96,7 @@ function checkGameOver(word) {
         console.log("Game won with word:", word);
         return;
     }
+    
     if (tries === maxTries) {
         gameLost(); // Call gameLost() if the user runs out of tries
         console.log("Game over! The correct word was:", rand);
@@ -119,8 +125,8 @@ function gameLost() {
 
 // Open dictionary for the correct word
 function dict() {
-    let dict = "https://www.oed.com/search/dictionary/?scope=Entries&q=";
-    dict = dict + rand; // Append the correct word to the dictionary URL
+    let oed = "https://www.oed.com/search/dictionary/?scope=Entries&q=";
+    dict = oed + rand; // Append the correct word to the dictionary URL
     window.open(dict); // Open the dictionary page in a new window
 }
 
@@ -146,7 +152,9 @@ function updateStats(result) {
     if (result === "win") {
         // If player won, record which try they won on
         key = "5-" + tries; 
-    } else if (result === "loss") {
+    }
+    
+    else if (result === "loss") {
         // If player lost, always log under '5-6'
         key = "5-6";
     }
@@ -154,7 +162,9 @@ function updateStats(result) {
     let currentValue = localStorage.getItem(key);
     if (currentValue === null) {
         localStorage.setItem(key, "1"); // First time, set to 1
-    } else {
+    }
+    
+    else {
         localStorage.setItem(key, (parseInt(currentValue) + 1).toString()); // Increment
     }
 

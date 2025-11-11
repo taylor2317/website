@@ -75,7 +75,9 @@ function updateImage() {
         img.src = array[i]; // This must match the correct full path
         console.log("Image src set to:", img.src);
         updateDots();
-    } else {
+    }
+    
+    else {
         console.log("No image found or array is empty.");
     }
 }
@@ -85,10 +87,14 @@ function getCurrentArray() {
     if (gcse) {
         console.log("Returning GCSE image array.");
         return GCSE;
-    } else if (alevel) {
+    }
+    
+    else if (alevel) {
         console.log("Returning A-Level image array.");
         return ALevel;
-    } else {
+    }
+    
+    else {
         console.log("No image array selected.");
         return [];
     }
