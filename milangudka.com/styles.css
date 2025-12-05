@@ -15,10 +15,12 @@ html {
 }
 
 .header{
-    background-image: linear-gradient(to bottom right, teal, #15b295);
+    background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
     text-align: center;
     width: 100vw;
     padding:2%;
+    position: relative;
+    z-index: 100;
 }
 
 .header a{
@@ -66,7 +68,7 @@ html {
 .welcome {
     text-align: center;
     padding: 5%;
-    padding-bottom: 0%;
+    padding-bottom: 3%;
     width: 70%;
     background-color: white;
     border-radius: 20px;
@@ -97,7 +99,7 @@ html {
 
 .homeCont {
     width:78%;
-    background-image: linear-gradient(to bottom right, teal, #15b295);
+    background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
     margin: auto;
     margin-top: 5%;
     padding: 1%;
@@ -137,7 +139,7 @@ price {
 }
 
 .actionButt a, .cvButt a{
-    background-image: linear-gradient(to bottom right, teal, #15b295);
+    background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
     border: 1px, solid, teal;
     color: white;
     text-decoration: none;
@@ -163,7 +165,7 @@ price {
 }
 
 .references{
-    background-image: linear-gradient(to bottom right, teal, #15b295);
+    background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
 }
 
 .cv h2, .references h3 {
@@ -203,7 +205,7 @@ price {
     width: 40%;
     border: 0px;
     height: 0.1px;
-    background-image: linear-gradient(to bottom right, teal, #15b295);
+    background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
 }
 
 .pageBlock {
@@ -224,7 +226,7 @@ price {
 .quotes {
     margin: auto;
     text-align: center;
-    background-image: linear-gradient(to bottom right, teal, #15b295);
+    background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
     width: 85%;
     padding: 4.5%;
     color: white;
@@ -245,13 +247,20 @@ price {
     box-shadow: 2px 2px 10px lightgrey;
     margin-bottom: 5%;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s ease;
 } 
 
 .card i, .portCard i, .soloCard i {
     margin-top: 5%;
     font-size: 200%;
     color: teal;
+    transition: transform 0.5s ease;
+}
+
+.card i:hover, .portCard i:hover, .soloCard i:hover {
+    transform: rotate(15deg);
+    position: relative;
+    z-index: 1;
 }
 
 .portCard, .soloCard {
@@ -266,7 +275,7 @@ price {
     width: 75%;
     height: 1px;
     border: transparent;
-    background-image: linear-gradient(to bottom right, teal, #15b295);
+    background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
 }
 
 .tagsCont {
@@ -280,7 +289,7 @@ price {
 .tag{
     padding: 2%;
     color:white;
-    background-image: linear-gradient(to bottom right, teal, #15b295);
+    background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
     border-radius: 20px;
     border: 1px solid teal;
     font-size: smaller;
@@ -335,9 +344,54 @@ form p {
     font-weight: boldF;
 }
 
+form input, form textarea, form button {
+    font-family: "Funnel Display", serif;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin: 3px 0 3px 1%;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: teal;
+    background-color: #ffffff;
+    box-shadow: 0 0 12px rgba(0, 128, 128, 0.3);
+    transform: scale(1.02);
+}
+
+form button {
+    background: linear-gradient(to right, teal, #15b295);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    min-width: 100px;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 128, 128, 0.4);
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
 .footer{
     margin-top: 2%;
-    background-image: linear-gradient(to bottom right, teal, #15b295);
+    background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
     text-align: center;
     padding: 2%;
     user-select: text;
@@ -354,6 +408,13 @@ form p {
     font-size: 150%;
     padding: 0px;
     user-select: none;
+    transition: transform 0.5s ease;
+}
+
+.footer i:hover {
+    transform: rotate(15deg);
+    position: relative;
+    z-index: 1;
 }
 
 .fa-droplet-slash {
@@ -362,12 +423,18 @@ form p {
     text-align: right;
     font-size: larger;
     color: white;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.fa-droplet-slash:hover {
+    transform: none !important;
 }
 
 .pageback {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to bottom right, teal, #15b295);
+    background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
     position: fixed;
     color: white;
 }
@@ -417,7 +484,7 @@ form p {
     margin: auto;
     margin: 0;
     top:25%;
-    background-image: linear-gradient(to bottom right, teal, #15b295);
+    background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
     text-align: center;
     box-shadow: 2px 2px 10px teal;
     color: white;
@@ -551,7 +618,7 @@ form p {
 
     .butt a:hover {
         color: white;
-        background-image: linear-gradient(to bottom right, teal, #15b295);
+        background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
     }
     
     .cvButt {
@@ -569,10 +636,14 @@ form p {
     }
 
     .card:hover, .portCard:hover, .soloCard:hover{
-        margin-top: -5px;
-        margin-bottom: 5px;
-        transition: 0.5s;
-        background-color: lightgrey;
+        background-color: #f0f0f0;
+        box-shadow: 0px 15px 30px lightgray;
+        transform: translateY(-8px);
+        transition: 0.3s ease;
+    }
+
+    .card:hover i, .portCard:hover i, .soloCard:hover i {
+        transform: rotate(15deg);
     }
 
     .pageBlock {
@@ -625,7 +696,7 @@ form p {
 
     .keyTag:hover{
         color:white;
-        background-image: linear-gradient(to bottom right, teal, #15b295);
+        background-image: linear-gradient(to bottom right, #008080ee, #15b295ee);
         box-shadow: 2px 2px 10px teal;
     }
 
@@ -694,6 +765,22 @@ form p {
 
     .menuButton, .menuList, .portCard hr{
         display: none;
+    }
+
+    /* Make cursor indicate clickable for interactive elements */
+    a, button, input[type="button"], input[type="submit"],
+    [onclick], [role="button"], [tabindex],
+    .menuButton, .actionButt a, .cvButt a, .butt a, .menuList a,
+    .socials a, .arrows a, .fa-droplet-slash, .backUp {
+        cursor: pointer;
+    }
+
+    /* Ensure icons that are interactive show pointer on hover too */
+    .card i, .portCard i, .soloCard i, i.fa, svg {
+        cursor: default; /* default for non-clickable icons */
+    }
+    [onclick] i, [role="button"] i, [tabindex] i, .socials a i, .footer i, .fa-droplet-slash {
+        cursor: pointer;
     }
 
     .popup h1 {
@@ -769,3 +856,12 @@ form p {
     }
 
 }
+
+/* Force every element to use a 0.5s transition for hover effects */
+/* This ensures consistent hover animations across the site. */
+* {
+    transition: all 0.5s ease !important;
+}
+
+/* If you prefer a lighter scope, replace the rule above with a targeted list
+   of interactive elements instead. */
